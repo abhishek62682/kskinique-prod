@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -10,16 +11,19 @@ const services = [
     img: "/skin.png",
     title: "Skin",
     desc: "Advanced skincare treatments tailored to restore radiance and improve your skin's health.",
+    slug: "skin",
   },
   {
     img: "/hair.png",
     title: "Hair",
     desc: "Comprehensive hair restoration and care solutions for every hair type and concern.",
+    slug: "hair",
   },
   {
     img: "/laser.png",
     title: "Laser",
     desc: "Precision laser therapies for hair removal, skin rejuvenation, and targeted treatment.",
+    slug: "laser",
   },
 ];
 
@@ -72,10 +76,11 @@ export default function ServicesSection() {
 
       {/* ===== Section Content ===== */}
       <div className="section-content  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-        {services.map(({ img, title, desc }) => (
-          <div
+        {services.map(({ img, title, desc, slug }) => (
+          <Link
+            to={`/services/${slug}`}
             key={title}
-            className="service-card group relative rounded-[20px] bg-primary-dark h-[460px] sm:h-[500px] md:h-[500px]"
+            className="service-card group relative block rounded-[20px] bg-primary-dark h-[460px] sm:h-[500px] md:h-[500px]"
           >
             <div className="w-full h-full transition-transform duration-500 group-hover:-translate-y-12">
               <img
@@ -95,7 +100,7 @@ export default function ServicesSection() {
                 <p className="text-[13px] leading-[20px] text-text-light/70 line-clamp-2 font-secondary">
                   {desc}
                 </p>
-                <button className="flex items-center gap-1.5 text-text-light/90 text-[13px] font-medium font-secondary hover:text-text-light hover:gap-2.5 transition-all duration-300 group/btn w-fit">
+                <span className="flex items-center gap-1.5 text-text-light/90 text-[13px] font-medium font-secondary group-hover:text-text-light group-hover:gap-2.5 transition-all duration-300 w-fit">
                   View Details
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -107,14 +112,14 @@ export default function ServicesSection() {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="transition-transform duration-300 group-hover/btn:translate-x-0.5"
+                    className="transition-transform duration-300 group-hover:translate-x-0.5"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
-                </button>
+                </span>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 

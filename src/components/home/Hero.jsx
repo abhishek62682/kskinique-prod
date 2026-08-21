@@ -58,12 +58,16 @@ const Hero = () => {
             <div className="relative flex justify-center items-center rounded-full animate-spin [animation-duration:20s] [animation-timing-function:linear] w-[550px] h-[550px] md:max-w-160 md:h-160">
               {treatmentCategories.map((item, index) => {
                 const rotate = (360 / treatmentCategories.length) * index;
+                const to = item.slug
+                  ? `/services/${item.category}/${item.slug}`
+                  : `/services/${item.category}`;
                 return (
                   <CircularChip
                     key={item.id}
                     rotate={rotate}
                     label={item.label}
                     image={item.image}
+                    to={to}
                   />
                 );
               })}

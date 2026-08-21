@@ -27,31 +27,7 @@ export const SERVICES_CONFIG = {
       desc: "Specialized protocols to manage and fade stubborn hormonal hyperpigmentation safely and effectively.",
       img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/23a37ac054-6fc76718f81492f9588f.png",
     },
-    // {
-    //   title: "Tan & Dark Circles",
-    //   desc: "Rejuvenating treatments to brighten the delicate under-eye area and remove stubborn sun tan.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/20cbe181cf-aee4f98760d030861c2d.png",
-    // },
-    // {
-    //   title: "UV Phototherapy",
-    //   desc: "Targeted light therapy for effective management of Vitiligo, Psoriasis, and other chronic skin conditions.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/4f03393860-1e6cac84822fd214c230.png",
-    // },
-    // {
-    //   title: "Bride / Groom Skincare",
-    //   desc: "Curated pre-wedding skincare journeys to ensure you have a flawless, radiant glow for your big day.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/4d8123aca7-64438a0423f589bd8edd.png",
-    // },
-    // {
-    //   title: "Photofacial",
-    //   desc: "Intense Pulsed Light (IPL) therapy to improve skin color, texture, and reduce signs of aging.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/b5e9f2dc4d-c4c95d12cc0b3aa76179.png",
-    // },
-    // {
-    //   title: "Skintag / Mole Removal",
-    //   desc: "Safe, virtually painless removal of unwanted benign skin growths, moles, warts, and birthmarks.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/fe71b46b4e-fdaa2d40a2ac1853aaf0.png",
-    // },
+   
   ],
 
   hair: [
@@ -70,26 +46,7 @@ export const SERVICES_CONFIG = {
       desc: "Targeted therapies for itchiness, flaking, inflammation, and other complex scalp conditions.",
       img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/020d2ef44f-b513524e6e654ec2e8df.png",
     },
-    // {
-    //   title: "Mesotherapy",
-    //   desc: "Nutrient-rich micro-injections directly into the scalp to nourish hair follicles and prevent thinning.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/42ac3b8747-0b9b7bff8bc6df6ec650.png",
-    // },
-    // {
-    //   title: "Microneedling",
-    //   desc: "Collagen induction therapy for the scalp to stimulate stem cells and encourage robust hair growth.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/6f2be55146-0356de1a010ad4f6d224.png",
-    // },
-    // {
-    //   title: "PRP / GFC Therapy",
-    //   desc: "Advanced platelet-rich plasma treatments to stimulate hair follicles and promote natural hair growth.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/90985656b4-4003251c604e1b1ad0b5.png",
-    // },
-    // {
-    //   title: "Dandruff",
-    //   desc: "Medical-grade solutions to effectively manage and eliminate persistent dandruff and seborrheic dermatitis.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/addca01659-23ae54ff013fcdc7f04c.png",
-    // },
+    
   ],
 
   laser: [
@@ -118,16 +75,7 @@ export const SERVICES_CONFIG = {
       desc: "Advanced laser toning to target deep pigmentation, melasma, and improve overall skin clarity.",
       img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/f8c593f73b-892251e8baa9ce1721e7.png",
     },
-    // {
-    //   title: "Low Level Light Therapy",
-    //   desc: "Non-invasive LED therapy to accelerate healing, reduce inflammation, and promote collagen production.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/3df58b4f96-7a94913761e1af6cfbb2.png",
-    // },
-    // {
-    //   title: "Stretch Mark Reduction",
-    //   desc: "Specialized laser protocols to fade striae and stimulate dermal remodeling for smoother skin.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/e18eaae631-6f24a601a76763e6dbd3.png",
-    // },
+   
   ],
 
   cosmetic: [
@@ -150,21 +98,6 @@ export const SERVICES_CONFIG = {
       title: "Microblading",
       desc: "Semi-permanent eyebrow tattooing technique to create natural-looking, fuller brows.",
       img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/af834cce42-8d7a9036f0b7b4873a8c.png",
-    },
-    // {
-    //   title: "Medi Facial / Clean Up",
-    //   desc: "Medical-grade facials incorporating deep cleansing, exfoliation, and targeted serums for radiant skin.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/0faf66d63d-f1c6e27865fccb1e5655.png",
-    // },
-    // {
-    //   title: "Skin Rejuvenation",
-    //   desc: "Customized protocols to revitalize tired, dull skin and improve overall texture and tone.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/e49bf37624-26634cadea8fab964ff6.png",
-    // },
-    // {
-    //   title: "Skin Polishing",
-    //   desc: "Advanced microdermabrasion techniques to buff away dead skin cells and reveal a brighter complexion.",
-    //   img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/1c3d92c4ff-375444a87072ba7e58af.png",
-    // },
+    }
   ],
 };

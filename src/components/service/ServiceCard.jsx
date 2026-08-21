@@ -1,10 +1,12 @@
 // ServiceCard.jsx
+import { Link } from "react-router-dom";
+import { slugify } from "../../utils/slugify";
 
 export default function ServiceCard({ service, label }) {
   const { img, title, desc } = service;
 
   return (
-    <div className="group cursor-pointer flex flex-col">
+    <Link to={`/services/${label}/${slugify(title)}`} className="group cursor-pointer flex flex-col">
       <div className="relative w-full h-[220px] rounded-[20px] overflow-hidden mb-5 flex justify-center items-end bg-primary-05">
         <div className="w-[78%] h-[92%] rounded-t-full absolute bottom-0 overflow-hidden shadow-sm bg-white">
           <img
@@ -23,6 +25,6 @@ export default function ServiceCard({ service, label }) {
       <p className="text-[13px] leading-[20px] text-text-soft font-secondary line-clamp-2">
         {desc}
       </p>
-    </div>
+    </Link>
   );
 }
