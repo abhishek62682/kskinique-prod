@@ -1,6 +1,6 @@
 export default function FloatingActionButtons() {
-  const phone = "+917777005606";
-  const whatsapp = "917777005606";
+  const phone = "+917021210819";
+  const whatsapp = "917021210819";
   const whatsappMessage = "Hi, I'd like to book a consultation";
   const qrImage = "/qrcode.png"; // 👈 apna QR image ka path yaha daal de
 

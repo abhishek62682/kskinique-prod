@@ -6,8 +6,7 @@ import SuitabilitySection from "../components/serviceDetails/SuitabilitySection"
 import BenefitsList from "../components/serviceDetails/BenefitsList";
 import ProcedureSteps from "../components/serviceDetails/ProcedureSteps";
 import ServiceFaqSection from "../components/serviceDetails/ServiceFaqSection";
-import CtaSection from "../components/home/CtaSection";
-import { getServiceDetails } from "../config/serviceDetailsConfig";
+import { getServiceDetails } from "../config/services";
 
 export default function ServiceDetailsPage() {
   const { category, slug } = useParams();
@@ -46,7 +45,6 @@ export default function ServiceDetailsPage() {
       <BenefitsList benefits={service.benefits} />
       <ProcedureSteps steps={service.procedure} />
       <ServiceFaqSection faqs={service.faqs} />
-      <CtaSection />
     </main>
   );
 }

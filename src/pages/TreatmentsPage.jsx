@@ -2,28 +2,25 @@
 import { useState, useMemo } from "react";
 
 import TreatmentsGrid from "../components/service/TreatmentsGrid";
-import { SERVICES_CONFIG } from "../config/servicesConfig";
+import { SERVICES } from "../config/services";
 import PageHero from "../components/common/PageHero";
 import ProcessSection from "../components/service/ProcessSection";
-import CtaSection from "../components/home/CtaSection";
 import BenefitsCards from "../components/service/BenefitsCards";
 
 export default function TreatmentsPage() {
   const [query, setQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState("all");
 
-  // returns the same { skin: [...], hair: [...] } shape, filtered by
-  // active category pill and by treatment name search
-  const groupedServices = useMemo(() => {
+  // filters SERVICES by active category pill and by treatment name search
+  const categories = useMemo(() => {
     const q = query.trim().toLowerCase();
     const categoriesToShow =
-      activeFilter === "all" ? Object.keys(SERVICES_CONFIG) : [activeFilter];
+      activeFilter === "all" ? SERVICES : SERVICES.filter((cat) => cat.category === activeFilter);
 
-    return categoriesToShow.reduce((acc, cat) => {
-      const items = SERVICES_CONFIG[cat] || [];
-      acc[cat] = q ? items.filter((s) => s.title.toLowerCase().includes(q)) : items;
-      return acc;
-    }, {});
+    return categoriesToShow.map((cat) => ({
+      ...cat,
+      services: q ? cat.services.filter((s) => s.title.toLowerCase().includes(q)) : cat.services,
+    }));
   }, [query, activeFilter]);
 
   return (
@@ -36,12 +33,9 @@ export default function TreatmentsPage() {
 />
 
       {/* <FilterBar activeFilter={activeFilter} onFilterChange={setActiveFilter} /> */}
-      <TreatmentsGrid groupedServices={groupedServices} />
+      <TreatmentsGrid categories={categories} />
 <BenefitsCards />
       <ProcessSection />
-
-
-       <CtaSection />
     </main>
   );
 }

@@ -47,7 +47,6 @@ export default function Navbar() {
     { slug: "skin", label: "Skin" },
     { slug: "hair", label: "Hair" },
     { slug: "laser", label: "Laser" },
-    { slug: "cosmetic", label: "Cosmetic" },
   ];
 
   return (

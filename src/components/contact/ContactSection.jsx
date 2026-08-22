@@ -11,26 +11,33 @@ const contactItems = [
   {
     icon: "ri-phone-line",
     title: "Phone",
-    content: "(+91) 7777-00-5606",
+    content: "+91 70212 10819",
   },
   {
     icon: "ri-mail-line",
     title: "Email Address",
-    content: "skinscienceclinics@gmail.com",
+    content: "support@kskinique.com",
+  },
+  {
+    icon: "ri-time-line",
+    title: "Business Hours",
+    content: "Open all days, 11:00 AM – 7:00 PM",
   },
 ];
 
 const socialLinks = [
-  { icon: "ri-instagram-line", href: "#" },
-  { icon: "ri-facebook-fill", href: "#" },
-  { icon: "ri-whatsapp-line", href: "#" },
-  { icon: "ri-linkedin-fill", href: "#" },
+  { icon: "ri-instagram-line", href: "https://www.instagram.com/skinique_bydr.kajal/reels/?hl=en" },
+  {
+    icon: "ri-whatsapp-line",
+    href: `https://wa.me/917021210819?text=${encodeURIComponent("Hi, I'd like to book a consultation")}`,
+  },
 ];
 
 export default function ContactSection() {
   const [form, setForm] = useState({
     name: "",
     contact: "",
+    service: "",
     email: "",
     message: "",
   });
@@ -93,6 +100,8 @@ export default function ContactSection() {
                 <a
                   key={social.icon}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="size-[40px] rounded-full border border-text-light/20 bg-text-light/10 flex items-center justify-center hover:bg-text-light/20 transition"
                 >
                   <i className={`${social.icon} text-[18px] text-text-light`}></i>
@@ -107,12 +116,13 @@ export default function ContactSection() {
               Get in touch
             </h2>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <form onSubmit={handleSubmit} className="flex flex-1 flex-col gap-4">
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="text"
                   name="name"
                   placeholder="Name"
+                  required
                   value={form.name}
                   onChange={handleChange}
                   className="w-full rounded-[14px] bg-primary-05 border border-primary-dark/10 px-4 py-3.5 text-[14px] font-secondary text-primary-dark placeholder:text-primary-dark/50 outline-none focus:border-primary-dark/30 transition"
@@ -121,28 +131,42 @@ export default function ContactSection() {
                   type="tel"
                   name="contact"
                   placeholder="Contact Number"
+                  required
                   value={form.contact}
                   onChange={handleChange}
                   className="w-full rounded-[14px] bg-primary-05 border border-primary-dark/10 px-4 py-3.5 text-[14px] font-secondary text-primary-dark placeholder:text-primary-dark/50 outline-none focus:border-primary-dark/30 transition"
                 />
               </div>
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                value={form.email}
-                onChange={handleChange}
-                className="w-full rounded-[14px] bg-primary-05 border border-primary-dark/10 px-4 py-3.5 text-[14px] font-secondary text-primary-dark placeholder:text-primary-dark/50 outline-none focus:border-primary-dark/30 transition"
-              />
+              <div className="flex flex-col sm:flex-row gap-4">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address (optional)"
+                  value={form.email}
+                  onChange={handleChange}
+                  className="w-full rounded-[14px] bg-primary-05 border border-primary-dark/10 px-4 py-3.5 text-[14px] font-secondary text-primary-dark placeholder:text-primary-dark/50 outline-none focus:border-primary-dark/30 transition"
+                />
+                <select
+                  name="service"
+                  value={form.service}
+                  onChange={handleChange}
+                  className="w-full rounded-[14px] bg-primary-05 border border-primary-dark/10 px-4 py-3.5 text-[14px] font-secondary text-primary-dark outline-none focus:border-primary-dark/30 transition"
+                >
+                  <option value="">Service (optional)</option>
+                  <option value="skin">Skin</option>
+                  <option value="hair">Hair</option>
+                  <option value="laser">Laser</option>
+                </select>
+              </div>
 
               <textarea
                 name="message"
-                placeholder="Message.."
+                placeholder="Message.. (optional)"
                 rows={5}
                 value={form.message}
                 onChange={handleChange}
-                className="w-full resize-none rounded-[14px] bg-primary-05 border border-primary-dark/10 px-4 py-3.5 text-[14px] font-secondary text-primary-dark placeholder:text-primary-dark/50 outline-none focus:border-primary-dark/30 transition"
+                className="w-full flex-1 min-h-32 resize-none rounded-[14px] bg-primary-05 border border-primary-dark/10 px-4 py-3.5 text-[14px] font-secondary text-primary-dark placeholder:text-primary-dark/50 outline-none focus:border-primary-dark/30 transition"
               />
 
               <label className="flex w-fit items-center gap-3 rounded-[14px] border border-primary-dark/10 bg-primary-05 px-4 py-3.5 text-[14px] font-secondary text-primary-dark">

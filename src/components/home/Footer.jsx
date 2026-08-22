@@ -23,7 +23,7 @@ const Footer = () => {
             </a>
 
             <p className="font-secondary text-surface/60 text-[15px] leading-relaxed ">
-               Dr. Kajal Komalan is a dermatology clinic providing skin, hair, and nail care, including acne, pigmentation, and eczema treatment. All medical services are delivered by licensed dermatologists in accordance with applicable regulations.
+               Skinique by Dr. Kajal Komalan is a dermatology and aesthetic medicine clinic in Navi Mumbai, offering skin, hair, and laser treatments. Every treatment is personalized and delivered by a qualified dermatologist using USFDA-approved technology.
             </p>
 
             <div className="flex items-center gap-5 flex-wrap pt-1">
@@ -58,10 +58,9 @@ const Footer = () => {
                 Services
               </p>
               <ul className="flex flex-col gap-[15px] text-[15px] leading-[20px]">
-                <li><a href="/services#acne" className="font-secondary text-surface/80 hover:text-surface transition-colors duration-200">Acne Treatment</a></li>
-                <li><a href="/services#pigmentation" className="font-secondary text-surface/80 hover:text-surface transition-colors duration-200">Pigmentation Care</a></li>
-                <li><a href="/services#peels" className="font-secondary text-surface/80 hover:text-surface transition-colors duration-200">Chemical Peels</a></li>
-                <li><a href="/services#eczema" className="font-secondary text-surface/80 hover:text-surface transition-colors duration-200">Eczema Management</a></li>
+                <li><a href="/services/skin" className="font-secondary text-surface/80 hover:text-surface transition-colors duration-200">Skin</a></li>
+                <li><a href="/services/hair" className="font-secondary text-surface/80 hover:text-surface transition-colors duration-200">Hair</a></li>
+                <li><a href="/services/laser" className="font-secondary text-surface/80 hover:text-surface transition-colors duration-200">Laser</a></li>
               </ul>
             </div>
 
@@ -83,16 +82,16 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="tel:+919819481311"
+                    href="tel:+917021210819"
                     className="flex items-center gap-2 font-secondary text-surface/80 hover:text-surface transition-colors duration-200"
                   >
                     <i className="ri-phone-line text-base shrink-0"></i>
-                    +91 98194 81311
+                    +91 70212 10819
                   </a>
                 </li>
                 <li>
                   <a
-                    href="mailto:example@gmail.com"
+                    href="mailto:support@kskinique.com"
                     className="flex items-center gap-2 font-secondary text-surface/80 hover:text-surface transition-colors duration-200"
                   >
                     <i className="ri-mail-line text-base shrink-0"></i>

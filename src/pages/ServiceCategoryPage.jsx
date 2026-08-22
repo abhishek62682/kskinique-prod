@@ -4,28 +4,13 @@ import PageHero from "../components/common/PageHero";
 import TreatmentsGrid from "../components/service/TreatmentsGrid";
 import BenefitsCards from "../components/service/BenefitsCards";
 import ProcessSection from "../components/service/ProcessSection";
-import CtaSection from "../components/home/CtaSection";
-import { SERVICES_CONFIG } from "../config/servicesConfig";
-
-const CATEGORY_LABELS = {
-  skin: "Skin",
-  hair: "Hair",
-  laser: "Laser",
-  cosmetic: "Cosmetic",
-};
-
-const CATEGORY_DESCRIPTIONS = {
-  skin: "Dermatologist-led treatments for acne, pigmentation, texture, and every skin concern in between.",
-  hair: "Restorative treatments to manage hair loss, scalp health, and long-term hair growth.",
-  laser: "Advanced laser technology for hair reduction, scar reduction, tattoo removal, and more.",
-  cosmetic: "Aesthetic treatments to smooth, lift, and refresh — with natural-looking results.",
-};
+import { getCategory } from "../config/services";
 
 export default function ServiceCategoryPage() {
   const { category } = useParams();
-  const services = SERVICES_CONFIG[category];
+  const cat = getCategory(category);
 
-  if (!services) {
+  if (!cat) {
     return (
       <main className="w-full bg-surface">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-28 flex flex-col items-center gap-6 text-center">
@@ -45,13 +30,12 @@ export default function ServiceCategoryPage() {
     <main className="w-full">
       <PageHero
         badgeText="Our Services"
-        heading={`${CATEGORY_LABELS[category] ?? category} Treatments`}
-        description={CATEGORY_DESCRIPTIONS[category]}
+        heading={`${cat.label} Treatments`}
+        description={cat.description}
       />
-      <TreatmentsGrid groupedServices={{ [category]: services }} />
+      <TreatmentsGrid categories={[cat]} />
       <BenefitsCards />
       <ProcessSection />
-      <CtaSection />
     </main>
   );
 }

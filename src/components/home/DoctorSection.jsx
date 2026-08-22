@@ -4,15 +4,15 @@ import Button from "../ui/Button";
 export default function DoctorSection() {
   const credentials = [
     {
-      label: "Board certified dermatologist",
+      label: "MBBS, DDV Qualified",
       icon: "https://cdn.prod.website-files.com/6968665112e3574ab21f88a1/696b5ed3c5ac3c0715e38329_icon-11.svg",
     },
     {
-      label: "10+ years clinical experience",
+      label: "Personalized treatment plans",
       icon: "https://cdn.prod.website-files.com/6968665112e3574ab21f88a1/696b5fbd9bd7f470dd14df1b_icon-12.svg",
     },
     {
-      label: "Advanced aesthetic training",
+      label: "Natural, long-lasting results",
       icon: "https://cdn.prod.website-files.com/6968665112e3574ab21f88a1/696b5fbdea866d9ac6f4bc77_icon-13.svg",
     },
   ];
@@ -76,10 +76,10 @@ export default function DoctorSection() {
 
               <div className="flex flex-col gap-3">
                 <p className="text-[14px] sm:text-[15px] leading-[1.75] text-text-soft font-secondary">
-                  Board-certified dermatologist with over 20 years of experience in medical and cosmetic dermatology. Specializes in anti-aging treatments, skin cancer prevention, and advanced laser procedures. Published researcher and frequent speaker at dermatology conferences.
+                  Dr. Kajal Komalan (MBBS, DDV) believes in combining scientific dermatology with aesthetic artistry to create natural, long-lasting results.
                 </p>
                 <p className="text-[14px] sm:text-[15px] leading-[1.75] text-text-soft font-secondary">
-                  Her philosophy is simple: understand the person, treat the skin condition, and enhance natural beauty without compromise.
+                  Every consultation focuses on understanding the patient's concerns and designing a personalized treatment plan — because beautiful skin starts with healthy skin, and healthy skin starts with a confident you.
                 </p>
               </div>
 

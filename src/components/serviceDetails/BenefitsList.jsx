@@ -16,9 +16,12 @@ export default function BenefitsList({ benefits = [] }) {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="flex flex-wrap justify-center gap-5">
           {benefits.map((benefit) => (
-            <div key={benefit.title} className="rounded-3xl bg-primary-05 flex flex-col items-center text-center px-6 pt-9 pb-8 gap-4">
+            <div
+              key={benefit.title}
+              className="rounded-3xl bg-primary-05 flex flex-col items-center text-center px-6 pt-9 pb-8 gap-4 w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-13.33px)]"
+            >
               <span className="size-14 flex items-center justify-center rounded-full bg-surface text-primary-dark text-[22px]">
                 <i className={benefit.icon} />
               </span>

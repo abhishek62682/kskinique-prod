@@ -1,10 +1,8 @@
 // TreatmentsGrid.jsx
 import ServiceCard from "./ServiceCard";
 
-export default function TreatmentsGrid({ groupedServices }) {
-  const visibleCategories = Object.keys(groupedServices).filter(
-    (cat) => groupedServices[cat]?.length > 0
-  );
+export default function TreatmentsGrid({ categories }) {
+  const visibleCategories = categories.filter((cat) => cat.services?.length > 0);
 
   return (
     <section className="w-full bg-surface">
@@ -17,17 +15,17 @@ export default function TreatmentsGrid({ groupedServices }) {
         )}
 
         {visibleCategories.map((cat) => (
-          <div key={cat} id={`section-${cat}`} className="flex flex-col gap-12">
+          <div key={cat.category} id={`section-${cat.category}`} className="flex flex-col gap-12">
             <div className="flex items-center gap-6">
               <h2 className="font-primary text-[24px] sm:text-[28px] text-primary-dark whitespace-nowrap capitalize">
-                {cat} Treatments
+                {cat.label} Treatments
               </h2>
               {/* <div className="h-px bg-border flex-1 hidden sm:block" /> */}
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-              {groupedServices[cat].map((service) => (
-                <ServiceCard key={service.title} service={service} label={cat} />
+              {cat.services.map((service) => (
+                <ServiceCard key={service.slug} service={service} category={cat.category} label={cat.label} />
               ))}
             </div>
           </div>

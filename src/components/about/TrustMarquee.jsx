@@ -1,11 +1,11 @@
 // TrustMarquee.jsx
 
 const TRUST_ITEMS = [
-  "Board Certified",
-  "Advanced 3D Diagnostics",
-  "Certified Specialists",
-  "Global Safety Standards",
-  "Advanced Diagnostics",
+  "Qualified Dermatologist",
+  "Personalized Treatment Plans",
+  "USFDA Approved Technologies",
+  "Strict Hygiene Protocols",
+  "Latest Laser & Aesthetic Equipment",
 ];
 
 const marqueeItems = [...TRUST_ITEMS, ...TRUST_ITEMS];

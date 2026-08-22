@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/home/Footer";
 import Navbar from "../components/Navbar";
+import CtaSection from "../components/home/CtaSection";
 
 import Lenis from "lenis";
 import FloatingActionButtons from "../components/common/FloatingActionButtons";
@@ -24,6 +25,7 @@ const AppLayout = () => {
     <>
       <Navbar />
       <Outlet />
+      <CtaSection />
       <Footer />
 
       <FloatingActionButtons />

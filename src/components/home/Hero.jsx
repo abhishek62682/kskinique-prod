@@ -1,5 +1,15 @@
-import { treatmentCategories } from "../../config/treatmentCategories";
+import { Link } from "react-router-dom";
+import { SERVICES } from "../../config/services";
 import CircularChip from "../CircularChip";
+
+const heroChips = SERVICES.flatMap((cat) =>
+  cat.services.slice(0, 4).map((service) => ({
+    id: service.slug,
+    label: service.title,
+    image: service.img,
+    to: `/services/${cat.category}/${service.slug}`,
+  }))
+);
 
 const Hero = () => {
   return (
@@ -19,14 +29,14 @@ const Hero = () => {
                 skin starts here
               </h1>
               <p className="text-amber-50 font-secondary leading-relaxed text-sm sm:text-base md:text-lg">
-                Advanced dermatology and modern
-                <br  />
-                aesthetic treatments designed to improve
+                Where healthy skin meets natural beauty.
+                <br />
+                Evidence-based dermatology, tailored to you.
               </p>
             </div>
           </div>
 
-          <div className="absolute bottom-0 left-0 w-full flex items-end justify-center z-30">
+          <div className="absolute bottom-0 left-0 w-full flex items-end justify-center z-20">
             <img
               className="w-16 sm:w-20 md:w-24 h-auto object-contain translate-y-1 translate-x-4 sm:translate-x-6"
               src="https://framerusercontent.com/images/sCtHsVXTYzYfLElkCb3pemCxWfc.svg?width=97&height=49"
@@ -34,8 +44,8 @@ const Hero = () => {
             />
 
             <div className="relative size-48 sm:size-56 md:size-60 rounded-full bg-[#fdf7ef] translate-y-3/5 shrink-0">
-              <a
-                href="#"
+              <Link
+                to="/services"
                 className="absolute top-5 md:top-8 left-1/2 -translate-x-1/2 w-full flex flex-col items-center gap-2 md:gap-2.5 text-xs md:text-sm leading-5 text-amber-900 no-underline group"
               >
                 <img
@@ -44,7 +54,7 @@ const Hero = () => {
                   alt=""
                 />
                 <span>Explore our treatments</span>
-              </a>
+              </Link>
             </div>
 
             <img
@@ -54,20 +64,17 @@ const Hero = () => {
             />
           </div>
 
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-[-45%] z-10">
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-[-45%] z-30">
             <div className="relative flex justify-center items-center rounded-full animate-spin [animation-duration:20s] [animation-timing-function:linear] w-[550px] h-[550px] md:max-w-160 md:h-160">
-              {treatmentCategories.map((item, index) => {
-                const rotate = (360 / treatmentCategories.length) * index;
-                const to = item.slug
-                  ? `/services/${item.category}/${item.slug}`
-                  : `/services/${item.category}`;
+              {heroChips.map((item, index) => {
+                const rotate = (360 / heroChips.length) * index;
                 return (
                   <CircularChip
                     key={item.id}
                     rotate={rotate}
                     label={item.label}
                     image={item.image}
-                    to={to}
+                    to={item.to}
                   />
                 );
               })}

@@ -20,16 +20,20 @@ export default function DoctorSection() {
             </h2>
             <div className="flex flex-col gap-4">
               <p className="text-[13px] sm:text-[14px] leading-[1.75] text-text-light/85 font-secondary">
-                Board-certified dermatologist with over 20 years of experience in medical and
-                cosmetic dermatology. Specializes in anti-aging treatments, skin cancer
-                prevention, and advanced laser procedures. Published researcher and frequent
-                speaker at dermatology conferences.
+                Dr. Kajal Komalan (MBBS, DDV) believes in combining scientific dermatology with
+                aesthetic artistry to create natural, long-lasting results.
               </p>
               <p className="text-[13px] sm:text-[14px] leading-[1.75] text-text-light/85 font-secondary">
-                Her philosophy is simple: understand the person, treat the skin condition, and
-                enhance natural beauty without compromise. She leads Skinique's clinics across
-                Navi Mumbai, equipped with advanced diagnostic and laser technology for
-                personalized skin and aesthetic care.
+                Every consultation focuses on understanding the patient's concerns and designing
+                a personalized treatment plan. She leads Skinique across Navi Mumbai, equipped
+                with advanced diagnostic and laser technology for personalized skin and
+                aesthetic care.
+              </p>
+              <p className="text-[13px] sm:text-[14px] leading-[1.75] text-text-light/85 font-secondary">
+                From acne and pigmentation to hair restoration and laser treatments, she brings
+                the same evidence-based approach to every concern. Patients often describe her
+                consultations as thorough yet unhurried, with every question answered and every
+                option explained clearly before any treatment begins.
               </p>
             </div>
           </div>

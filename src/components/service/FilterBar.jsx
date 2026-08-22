@@ -1,7 +1,7 @@
 // FilterBar.jsx
-import { SERVICES_CONFIG } from "../../config/servicesConfig";
+import { SERVICES } from "../../config/services";
 
-const categories = Object.keys(SERVICES_CONFIG);
+const categories = SERVICES.map((cat) => cat.category);
 
 export default function FilterBar({ activeFilter, onFilterChange, query, onQueryChange }) {
   return (

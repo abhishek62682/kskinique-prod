@@ -51,15 +51,16 @@ export default function OurStorySection() {
                 </div>
 
                 <h2 className="text-[30px] sm:text-[38px] md:text-[42px] font-primary text-primary-dark leading-[1.15]">
-                  Built on care,
+                  Beautiful skin. Healthy skin.
                   <br />
-                  grounded in science
+                  Confident you.
                 </h2>
 
                 <p className="text-[14px] sm:text-[15px] max-w-xl leading-[21px] text-text-soft font-secondary">
-                  Skinique began with a simple belief that great skincare shouldn't feel clinical
-                  or impersonal. Every treatment plan here is built around the patient first,
-                  combining advanced technology with a warm, unhurried approach to care.
+                  At Skinique, we combine evidence-based dermatology with advanced aesthetic
+                  treatments to help you achieve healthy, confident skin and hair. Every
+                  treatment is customized to your skin type and concerns, ensuring safe,
+                  effective, and natural-looking results.
                 </p>
 
                 <TrustMarquee />

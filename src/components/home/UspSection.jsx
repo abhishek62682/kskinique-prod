@@ -1,33 +1,45 @@
-import { Flower2, ShieldCheck, Sparkles, HeartHandshake } from "lucide-react";
+import { Stethoscope, Flower2, ShieldCheck, Sparkles, Zap, HeartHandshake } from "lucide-react";
 
 function UspSection() {
   const leftItems = [
     {
-      icon: Flower2,
-      title: "Personalized treatment plans",
+      icon: Stethoscope,
+      title: "Qualified Dermatologist",
       description:
-        "Revive radiance, stimulate collagen, and reveal clearer, smoother-looking skin.",
+        "MBBS, DDV certified — every treatment is physician-led and medically supervised.",
+    },
+    {
+      icon: Flower2,
+      title: "Personalized Treatment Plans",
+      description:
+        "Customized to your skin type, concern, and goals — never one-size-fits-all.",
     },
     {
       icon: ShieldCheck,
-      title: "Medical-grade safety",
+      title: "USFDA Approved Technologies",
       description:
-        "Advanced laser solutions for smooth, long-lasting hair removal.",
+        "Advanced lasers and devices cleared for safety and clinical efficacy.",
     },
   ];
 
   const rightItems = [
     {
       icon: Sparkles,
-      title: "Transparent recommendations",
+      title: "Strict Hygiene Protocols",
       description:
-        "Subtle enhancements that refresh your features without changing who you are.",
+        "Sterile, single-use consumables and clinical-grade sanitation at every step.",
+    },
+    {
+      icon: Zap,
+      title: "Latest Laser & Aesthetic Equipment",
+      description:
+        "State-of-the-art technology for precise, comfortable, effective results.",
     },
     {
       icon: HeartHandshake,
-      title: "Comforting environment",
+      title: "Comfortable, Judgment-Free Care",
       description:
-        "Target lines, volume loss, dullness, and tired skin with safe, proven treatments.",
+        "A calm, welcoming environment where every concern is heard before it's treated.",
     },
   ];
 
@@ -36,10 +48,10 @@ function UspSection() {
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 pb-20 sm:pb-28">
         <div className="flex flex-col items-center text-center gap-4 mb-16 sm:mb-20">
           <h2 className="text-[38px] sm:text-[46px] md:text-[52px] font-primary text-primary-dark leading-none">
-            How we care for you
+            Why Choose Skinique
           </h2>
           <p className="text-[14px] sm:text-[15px] leading-[1.75] text-text-soft font-secondary max-w-xl">
-            We combine advanced dermatology with aesthetic expertise to deliver results that look natural, feel confident, and support long-term skin health.
+            From the technology we use to the way we treat you, every detail is designed around one goal — results you can trust.
           </p>
         </div>
 

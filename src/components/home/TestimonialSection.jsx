@@ -4,41 +4,7 @@ import { Navigation, FreeMode } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/free-mode'
-
-const testimonials = [
-  {
-    quote:
-      "Dr. Kajal cleared up acne I'd struggled with for years. She actually listened, explained every option, and never pushed unnecessary treatments.",
-    avatar:
-      'https://lh3.googleusercontent.com/a-/ALV-UjXjJRaPtAHqavR_kvY46i-C5QbUqfi4EubHGTYE_6eHx51ssedG=w72-h72-p-rp-mo-br100',
-    name: 'Riya',
-    concern: 'Acne Treatment',
-  },
-  {
-    quote:
-      'My skin finally feels even-toned after the pigmentation therapy. The clinic is spotless and the staff made me feel comfortable from day one.',
-    avatar:
-      'https://lh3.googleusercontent.com/a-/ALV-UjWFU_SKrxF1OVifAN6C5PfuBjwq5PuSfsifeXDbvrDP-fG_ZJiP=w72-h72-p-rp-mo-br100',
-    name: 'Karan',
-    concern: 'Pigmentation Care',
-  },
-  {
-    quote:
-      'The chemical peel consultation was thorough and honest about what to expect. Three sessions in, the results already speak for themselves.',
-    avatar:
-      'https://lh3.googleusercontent.com/a-/ALV-UjVhTd50oCMlMDUZkv0UiGH-hIgFYV2ZRJLN5LIHGrgf4wQ0aBF2=w72-h72-p-rp-mo-ba2-br100',
-    name: 'Priya',
-    concern: 'Chemical Peel',
-  },
-  {
-    quote:
-      "They diagnosed my eczema flare-ups correctly on the first visit, after two other clinics couldn't. Genuinely grateful for the care I got here.",
-    avatar:
-      'https://lh3.googleusercontent.com/a-/ALV-UjWl1J7UF2Ungdpix-RnhIaevqCa4tAoIGJqD0mF3HMYR49a1F2E=w72-h72-p-rp-mo-br100',
-    name: 'Ananya',
-    concern: 'Eczema Management',
-  },
-]
+import { TESTIMONIALS } from '../../config/testimonials'
 
 const TestimonialSection = () => {
  
@@ -52,7 +18,7 @@ const TestimonialSection = () => {
       data-scroll-section=""
     >
       <div className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-16">
-        <div className="flex flex-col gap-8 lg:gap-12 w-full lg:w-2/3 min-w-0 overflow-hidden">
+        <div className="flex flex-col justify-between gap-8 lg:gap-12 w-full lg:w-2/3 min-w-0 overflow-hidden">
           <div className="flex items-start sm:items-end justify-between gap-4 flex-wrap">
             <div>
               <h2
@@ -62,6 +28,9 @@ const TestimonialSection = () => {
               >
                 What Our <br /> Patients Say
               </h2>
+              <p className="text-[14px] sm:text-[15px] text-text-soft font-secondary mt-3">
+                Trusted by plenty of happy patients across Navi Mumbai.
+              </p>
             </div>
             <div className="flex items-center gap-3">
               <div
@@ -106,12 +75,12 @@ const TestimonialSection = () => {
             }}
             className="mySwiper testimonial-swiper !overflow-hidden !items-stretch"
           >
-            {testimonials.map((t, i) => (
+            {TESTIMONIALS.map((t, i) => (
               <SwiperSlide
                 key={t.name}
                 className="!h-auto"
                 role="group"
-                aria-label={`${i + 1} / ${testimonials.length}`}
+                aria-label={`${i + 1} / ${TESTIMONIALS.length}`}
               >
                 <div className="bg-white rounded-3xl p-7 flex flex-col justify-between gap-6 h-full min-h-56">
                   <div className="flex flex-col gap-3">
@@ -145,7 +114,7 @@ const TestimonialSection = () => {
           </Swiper>
         </div>
 
-        <div className="w-full lg:w-1/3 rounded-[28px] overflow-hidden relative ">
+        <div className="w-full lg:w-1/3 h-[500px] rounded-[28px] overflow-hidden relative ">
           <img
             src="https://framerusercontent.com/images/ipAbYHifCDoQsFyitpmqxk7yTIQ.jpg?width=600&height=799"
             alt="Dermatologist with patient"

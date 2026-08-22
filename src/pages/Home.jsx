@@ -5,7 +5,6 @@ import ServicesSection from "../components/home/ServicesSection";
 import DoctorSection from "../components/home/DoctorSection";
 import WhyUsSection from "../components/home/WhyUsSection";
 import FaqSection from "../components/home/FaqSection";
-import CtaSection from "../components/home/CtaSection";
 import TestimonialSection from "../components/home/TestimonialSection";
 
 const HomePage = () => {
@@ -26,8 +25,6 @@ const HomePage = () => {
         <TestimonialSection />
 
         <FaqSection />
-
-        <CtaSection />
       </div>
     </>
   );

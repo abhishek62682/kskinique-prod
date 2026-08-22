@@ -7,7 +7,6 @@
 
 import ContactSection from "../components/contact/ContactSection"
 import FaqSection from "../components/home/FaqSection"
-import CtaSection from "../components/home/CtaSection"
 import PageHero from "../components/common/PageHero"
 
 
@@ -33,8 +32,6 @@ const ContactUs = () => {
       <ContactSection />
 
       <FaqSection />
-
-      <CtaSection />
 
     </div>
    </div>

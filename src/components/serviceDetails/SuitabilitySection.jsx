@@ -16,9 +16,12 @@ export default function SuitabilitySection({ points = [] }) {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-5 max-w-4xl mx-auto">
           {points.map((point) => (
-            <div key={point} className="flex items-start gap-4 rounded-[20px] bg-surface px-6 py-5">
+            <div
+              key={point}
+              className="flex items-start gap-4 rounded-[20px] bg-surface px-6 py-5 w-full sm:w-[calc(50%-10px)]"
+            >
               <span className="size-7 shrink-0 flex items-center justify-center rounded-full bg-primary-05 text-primary-dark mt-0.5">
                 <i className="ri-check-line text-[15px]" />
               </span>
