@@ -13,6 +13,7 @@ export default function AboutPage() {
     <div className="page-content bg-surface-light relative z-[10]">
 
      <PageHero
+  breadcrumbs={[{ label: "Home", to: "/" }, { label: "About" }]}
   badgeText="About Us"
   heading={
     <>

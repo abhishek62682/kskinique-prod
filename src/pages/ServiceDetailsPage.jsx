@@ -31,6 +31,12 @@ export default function ServiceDetailsPage() {
   return (
     <main className="w-full">
       <PageHero
+        breadcrumbs={[
+          { label: "Home", to: "/" },
+          { label: "Services", to: "/services" },
+          { label: service.categoryLabel, to: `/services/${service.category}` },
+          { label: service.title },
+        ]}
         badgeText={`${service.category.charAt(0).toUpperCase()}${service.category.slice(1)} Treatment`}
         heading={service.title}
         description={service.desc}

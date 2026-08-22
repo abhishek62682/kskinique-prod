@@ -1,4 +1,14 @@
 // WhyUsSection.jsx
+import afterImg from "../../assets/home/why-us-after.webp";
+import beforeImg from "../../assets/home/why-us-before.webp";
+import seamless1Img from "../../assets/home/why-us-seamless-1.webp";
+import seamless2Img from "../../assets/home/why-us-seamless-2.webp";
+import avatar1Img from "../../assets/home/why-us-avatar-1.webp";
+import avatar2Img from "../../assets/home/why-us-avatar-2.webp";
+import avatar3Img from "../../assets/home/why-us-avatar-3.webp";
+import photoImg from "../../assets/home/why-us-photo.webp";
+import freeBadgeIcon from "../../assets/icons/free-badge.svg";
+import whyUsVideo from "../../assets/home/why-us-video.mp4";
 
 export default function WhyUsSection() {
   return (
@@ -24,7 +34,7 @@ export default function WhyUsSection() {
           {/* Card A: Before/After — full height on lg, spans 2 rows */}
           <div className="relative rounded-[24px] overflow-hidden min-h-80 sm:row-span-2 sm:col-span-1">
             <img
-              src="https://framerusercontent.com/images/KLz3YY5GDbbEwOvVSAqGFLXE0eI.jpg?width=900&height=1200"
+              src={afterImg}
               alt="after"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -33,7 +43,7 @@ export default function WhyUsSection() {
               style={{ clipPath: "polygon(0 0, 50% 0, 50% 100%, 0 100%)", borderRight: "2px solid white" }}
             >
               <img
-                src="https://framerusercontent.com/images/mtj5hoiyHHRIFp2NkDEtYGmM.jpg?width=900&height=1200"
+                src={beforeImg}
                 alt="before"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -62,12 +72,12 @@ export default function WhyUsSection() {
                 Seamless client <br /> experience
               </h4>
               <img
-                src="https://framerusercontent.com/images/n8OzbYcYaueWCQCfguvevnR3o.png?scale-down-to=512"
+                src={seamless1Img}
                 alt=""
                 className="absolute w-[52%] -left-[2%] top-[44%] z-10"
               />
               <img
-                src="https://framerusercontent.com/images/wvDPYhnwJe8k3MekkKP9OyZlICg.png?scale-down-to=512"
+                src={seamless2Img}
                 alt=""
                 className="absolute w-[52%] -right-[2%] top-[60%]"
               />
@@ -91,9 +101,9 @@ export default function WhyUsSection() {
           <div className="rounded-[24px] min-h-62.5 bg-primary-05">
             <div className="flex flex-col items-center justify-center gap-5 h-full text-center p-6">
               <div className="flex items-center justify-center gap-2.5">
-                <img src="https://framerusercontent.com/images/hpCeYxp9YhmeNk4SNFOzNVe8M.jpg?width=100&height=100" alt="" className="size-15 rounded-full object-cover" />
-                <img src="https://framerusercontent.com/images/nWwBecntKvGpTzePQeixjCY7Yo.jpg?width=150&height=150" alt="" className="size-15 rounded-full object-cover scale-[1.4]" />
-                <img src="https://framerusercontent.com/images/o6sbNkCl3ZL3Bu5h6q6yPPVOX8.jpg?width=100&height=100" alt="" className="size-15 rounded-full object-cover" />
+                <img src={avatar1Img} alt="" className="size-15 rounded-full object-cover" />
+                <img src={avatar2Img} alt="" className="size-15 rounded-full object-cover scale-[1.4]" />
+                <img src={avatar3Img} alt="" className="size-15 rounded-full object-cover" />
               </div>
               <div className="flex flex-col gap-2">
                 <h4 className="font-primary text-[28px] sm:text-[30px] leading-[36px] text-primary-dark font-normal">Tailored to your vision</h4>
@@ -107,7 +117,7 @@ export default function WhyUsSection() {
           {/* Card E: Photo — spans 2 rows on lg */}
           <div className="rounded-[24px] overflow-hidden min-h-62.5 sm:row-span-2">
             <img
-              src="https://framerusercontent.com/images/bxWl7NQ8Cya6sHR7IukfwXk.jpg?width=397&height=405"
+              src={photoImg}
               alt=""
               className="w-full h-full object-cover"
             />
@@ -118,7 +128,7 @@ export default function WhyUsSection() {
             <div className="flex flex-col items-center gap-5 text-center px-7 py-10">
               <div className="relative">
                 <img
-                  src="https://framerusercontent.com/images/f1bwLBL0ZWOIKRZPcLihNcokU4.svg?width=51&height=51"
+                  src={freeBadgeIcon}
                   alt=""
                   className="size-12.75"
                 />
@@ -147,7 +157,7 @@ export default function WhyUsSection() {
               muted
               playsInline
               className="w-full h-full object-cover"
-              src="https://framerusercontent.com/assets/U7eWy10v7FhA88xMZeWxPMq0c.mp4"
+              src={whyUsVideo}
             />
           </div>
 

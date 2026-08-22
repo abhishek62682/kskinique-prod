@@ -26,6 +26,7 @@ export default function TreatmentsPage() {
   return (
     <main className="w-full">
       <PageHero
+  breadcrumbs={[{ label: "Home", to: "/" }, { label: "Services" }]}
   badgeText="Our Services"
   heading="Treatments Designed Around You"
   description="Explore our comprehensive range of dermatological and aesthetic services, tailored to

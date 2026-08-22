@@ -1,19 +1,24 @@
 // DoctorSection.jsx
 import Button from "../ui/Button";
+import doctorPortrait from "../../assets/home/doctor-portrait.webp";
+import credentialIcon1 from "../../assets/icons/credential-1.svg";
+import credentialIcon2 from "../../assets/icons/credential-2.svg";
+import credentialIcon3 from "../../assets/icons/credential-3.svg";
+import credentialBadge from "../../assets/icons/credential-badge.svg";
 
 export default function DoctorSection() {
   const credentials = [
     {
       label: "MBBS, DDV Qualified",
-      icon: "https://cdn.prod.website-files.com/6968665112e3574ab21f88a1/696b5ed3c5ac3c0715e38329_icon-11.svg",
+      icon: credentialIcon1,
     },
     {
       label: "Personalized treatment plans",
-      icon: "https://cdn.prod.website-files.com/6968665112e3574ab21f88a1/696b5fbd9bd7f470dd14df1b_icon-12.svg",
+      icon: credentialIcon2,
     },
     {
       label: "Natural, long-lasting results",
-      icon: "https://cdn.prod.website-files.com/6968665112e3574ab21f88a1/696b5fbdea866d9ac6f4bc77_icon-13.svg",
+      icon: credentialIcon3,
     },
   ];
 
@@ -30,7 +35,7 @@ export default function DoctorSection() {
           <div className="lg:col-span-5">
             <div className="relative rounded-[32px] overflow-hidden">
               <img
-                src="https://framerusercontent.com/images/GxQO8asItSl76Fw0bPEJgPjibvI.jpg?width=810&height=849"
+                src={doctorPortrait}
                 className="w-full h-120 sm:h-135 lg:h-150 object-cover object-top"
                 alt="Dr. Kajal Komalan"
               />
@@ -46,7 +51,7 @@ export default function DoctorSection() {
                     </p>
                   </div>
                   <img
-                    src="https://cdn.prod.website-files.com/6968665112e3574ab21f88a1/696b5857e260324cfcb81aaf_icon-14.svg"
+                    src={credentialBadge}
                     className="size-7 opacity-80 shrink-0"
                     alt="icon"
                   />

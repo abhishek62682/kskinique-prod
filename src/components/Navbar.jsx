@@ -4,19 +4,24 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [hidden, setHidden] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentY = window.scrollY;
+      const delta = currentY - lastScrollY.current;
 
-      if (currentY > lastScrollY.current) {
+      if (currentY < 80) {
+        setHidden(false);
+      } else if (delta > 5) {
         setHidden(true);
-      } else {
+      } else if (delta < -5) {
         setHidden(false);
       }
 
+      setScrolled(currentY >= 80);
       lastScrollY.current = currentY;
     };
 
@@ -53,9 +58,13 @@ export default function Navbar() {
     <>
       <nav
         id="nav"
-        className={`relative w-full z-300 transition-all duration-300 ${hidden ? "-translate-y-full" : "translate-y-0"}`}
+        className={`sticky top-0 w-full z-300 transition-all duration-300 ${hidden ? "-translate-y-full" : "translate-y-0"}`}
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between rounded-full px-6 py-4 bg-surface/70 backdrop-blur-lg">
+        <div
+          className={`max-w-7xl mx-auto flex items-center justify-between rounded-full px-6 py-4 transition-colors duration-300 ${
+            scrolled ? "bg-surface/70 backdrop-blur-lg" : "bg-transparent"
+          }`}
+        >
 
           {/* LEFT */}
           <div className="flex items-center flex-1">

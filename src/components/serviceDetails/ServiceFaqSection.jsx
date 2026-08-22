@@ -1,14 +1,19 @@
 // ServiceFaqSection.jsx
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Button from "../ui/Button";
 
-function FaqItem({ q, a }) {
-  const [open, setOpen] = useState(false);
+function FaqItem({ q, a, open, onToggle }) {
+  const [height, setHeight] = useState(0);
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) setHeight(contentRef.current.scrollHeight);
+  }, [a]);
 
   return (
     <div
       className="py-5 cursor-pointer border-b border-border last:border-none"
-      onClick={() => setOpen(!open)}
+      onClick={onToggle}
     >
       <div className="flex items-center justify-between gap-4">
         <h3 className="text-[15px] sm:text-[16px] font-medium font-secondary text-primary-dark leading-snug">
@@ -23,16 +28,21 @@ function FaqItem({ q, a }) {
           </svg>
         </span>
       </div>
-      {open && (
-        <p className="text-[14px] sm:text-[15px] text-text-soft font-secondary leading-[1.75] pt-4">
+      <div
+        className="overflow-hidden transition-all duration-300 ease-in-out"
+        style={{ maxHeight: open ? `${height}px` : "0px", opacity: open ? 1 : 0 }}
+      >
+        <p ref={contentRef} className="text-[14px] sm:text-[15px] text-text-soft font-secondary leading-[1.75] pt-4">
           {a}
         </p>
-      )}
+      </div>
     </div>
   );
 }
 
 export default function ServiceFaqSection({ faqs = [] }) {
+  const [openIndex, setOpenIndex] = useState(null);
+
   return (
     <section className="w-full bg-surface-alt">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
@@ -63,8 +73,14 @@ export default function ServiceFaqSection({ faqs = [] }) {
           </div>
 
           <div className="flex-1 flex flex-col">
-            {faqs.map(({ q, a }) => (
-              <FaqItem key={q} q={q} a={a} />
+            {faqs.map(({ q, a }, i) => (
+              <FaqItem
+                key={q}
+                q={q}
+                a={a}
+                open={openIndex === i}
+                onToggle={() => setOpenIndex(openIndex === i ? null : i)}
+              />
             ))}
           </div>
 

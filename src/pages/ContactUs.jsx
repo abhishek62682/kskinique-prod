@@ -16,6 +16,7 @@ const ContactUs = () => {
      <div className="page-content bg-surface-light relative z-[10] ">
 
     <PageHero
+  breadcrumbs={[{ label: "Home", to: "/" }, { label: "Contact" }]}
   badgeText="Get In Touch"
   heading={
     <>

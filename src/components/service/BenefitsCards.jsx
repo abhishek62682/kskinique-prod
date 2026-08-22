@@ -1,4 +1,7 @@
 // BenefitsCards.jsx
+import benefitsBadgeBg from "../../assets/icons/benefits-badge-bg.svg";
+import benefitsAvatar from "../../assets/icons/benefits-avatar.webp";
+import benefitsDecor from "../../assets/icons/benefits-decor.svg";
 
 export default function BenefitsCards() {
   return (
@@ -29,13 +32,13 @@ export default function BenefitsCards() {
             <div className="relative flex items-center justify-center py-2">
 
               <img
-                src="https://framerusercontent.com/images/a5Kgi5WpwsydAChd328uIr4gB6I.svg?width=162&height=70"
+                src={benefitsBadgeBg}
                 alt="Dermatologist"
                 className=""
               />
 
 
-              <img className="size-10 absolute rounded-full" src="https://framerusercontent.com/images/1EZhAxM1tjwLB5GmrjQlLPUMYjE.jpg?width=150&height=150" alt="" />
+              <img className="size-10 absolute rounded-full" src={benefitsAvatar} alt="" />
             </div>
 
             <p className="text-[14px] sm:text-[15px] leading-[1.7] text-text-soft font-secondary">
@@ -52,7 +55,7 @@ export default function BenefitsCards() {
               Advanced lasers and aesthetic equipment cleared for safety and clinical efficacy.
             </p>
 
-            <img className="absolute bottom-0" src="https://framerusercontent.com/images/HcwBqWjnj50hNIVdoZYRVO3inRk.svg?width=479&height=110" alt="" />
+            <img className="absolute bottom-0" src={benefitsDecor} alt="" />
 
           </div>
 

@@ -1,6 +1,9 @@
 // OurStorySection.jsx
 import Button from "../ui/Button";
 import TrustMarquee from "./TrustMarquee";
+import clinicTreatmentImg from "../../assets/home/clinic-treatment.webp";
+import storyDoctorImg from "../../assets/about/story-doctor.webp";
+import storyConsultationImg from "../../assets/about/story-consultation.webp";
 
 export default function OurStorySection() {
   return (
@@ -11,7 +14,7 @@ export default function OurStorySection() {
 
             <div className="absolute border-6 border-white left-0 top-0 sm:left-[6%] sm:top-[6%] size-[200px] rounded-[20px] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.08)]">
               <img
-                src="https://thedermahouse.com/api/files/472"
+                src={clinicTreatmentImg}
                 alt="Skinique clinic"
                 className="w-full h-full object-cover"
               />
@@ -19,7 +22,7 @@ export default function OurStorySection() {
 
             <div className="absolute border-6 border-white right-0 size-50 top-0 sm:right-[6%] sm:top-[6%] rounded-[20px] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.08)]">
               <img
-                src="https://thedermahouse.com/api/files/472"
+                src={clinicTreatmentImg}
                 alt="Skinique treatment"
                 className="w-full h-full object-cover"
               />
@@ -27,7 +30,7 @@ export default function OurStorySection() {
 
             <div className="absolute left-0 bottom-0 sm:left-[6%] sm:bottom-[6%] border-6 border-white rounded-[20px] size-50 overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.08)]">
               <img
-                src="https://thedermahouse.com/api/files/468"
+                src={storyDoctorImg}
                 alt="Skinique doctor"
                 className="w-full h-full object-cover"
               />
@@ -35,7 +38,7 @@ export default function OurStorySection() {
 
             <div className="absolute right-0 bottom-0 sm:right-[6%] sm:bottom-[6%] border-6 border-white size-50 rounded-[20px] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.08)]">
               <img
-                src="https://thedermahouse.com/api/files/552"
+                src={storyConsultationImg}
                 alt="Skinique consultation"
                 className="w-full h-full object-cover"
               />

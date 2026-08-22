@@ -29,6 +29,11 @@ export default function ServiceCategoryPage() {
   return (
     <main className="w-full">
       <PageHero
+        breadcrumbs={[
+          { label: "Home", to: "/" },
+          { label: "Services", to: "/services" },
+          { label: cat.label },
+        ]}
         badgeText="Our Services"
         heading={`${cat.label} Treatments`}
         description={cat.description}

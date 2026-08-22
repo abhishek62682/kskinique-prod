@@ -1,6 +1,12 @@
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import orbit1 from "../../assets/home/about-orbit-1.webp";
+import orbit2 from "../../assets/home/about-orbit-2.webp";
+import orbit3 from "../../assets/home/about-orbit-3.webp";
+import orbit4 from "../../assets/home/about-orbit-4.webp";
+import orbit5 from "../../assets/home/about-orbit-5.webp";
+import orbit6 from "../../assets/home/about-orbit-6.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,14 +16,7 @@ const About = () => {
   const imgRefs = useRef([]);
   const textRef = useRef(null);
 
-  const images = [
-    "http://framerusercontent.com/images/P6QqeilELI6fIFRHjWwkdeHepA.png?scale-down-to=1024&width=1122&height=1402",
-    "https://framerusercontent.com/images/fiAWj988Zv8jrKyFcKqqZqceBoI.png?scale-down-to=1024&width=1122&height=1402",
-    "https://framerusercontent.com/images/lQDR1kLH31OjRTINZSUqPxaGTU.png?scale-down-to=1024&width=1122&height=1402",
-    "https://framerusercontent.com/images/QeWv0ivOQrKmUfbzkgMbot7L2k.png?scale-down-to=1024&width=1122&height=1402",
-    "https://framerusercontent.com/images/Vn7jGrblLt38uogmWbdt5bXG6w.png?scale-down-to=1024&width=1122&height=1402",
-    "https://framerusercontent.com/images/ZKq3zgYasQvi0ficWf3azg3dDU.png?width=1122&height=1402",
-  ];
+  const images = [orbit1, orbit2, orbit3, orbit4, orbit5, orbit6];
 
   const total = images.length;
 

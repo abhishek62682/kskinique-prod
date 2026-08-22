@@ -14,6 +14,21 @@ import skinBrighteningImg from "../assets/skin/skin-brightening.webp";
 import antiAgeingTreatmentsImg from "../assets/skin/anti-ageing-treatments.webp";
 import stretchMarksImg from "../assets/skin/stretch-marks.webp";
 import openPoresImg from "../assets/skin/open-pores.webp";
+import microneedlingImg from "../assets/skin/microneedling.webp";
+import skinRejuvenationImg from "../assets/skin/skin-rejuvenation.webp";
+
+import prpTherapyImg from "../assets/hair/prp-therapy.webp";
+import gfcTherapyImg from "../assets/hair/gfc-therapy.webp";
+import hairFallTreatmentImg from "../assets/hair/hair-fall-treatment.webp";
+import hairThinningImg from "../assets/hair/hair-thinning.webp";
+import dandruffTreatmentImg from "../assets/hair/dandruff-treatment.webp";
+import scalpDisordersImg from "../assets/hair/scalp-disorders.webp";
+
+import laserHairReductionImg from "../assets/laser/laser-hair-reduction.webp";
+import tattooRemovalImg from "../assets/laser/tattoo-removal.webp";
+import qSwitchLaserImg from "../assets/laser/q-switch-laser.webp";
+import laserToningImg from "../assets/laser/laser-toning.webp";
+import carbonLaserFacialImg from "../assets/laser/carbon-laser-facial.webp";
 
 const IMG = "https://storage.googleapis.com/uxpilot-auth.appspot.com";
 
@@ -244,7 +259,7 @@ export const SERVICES = [
         slug: "microneedling",
         title: "Microneedling",
         desc: "Collagen-induction therapy to smooth scars, fine lines, and uneven texture.",
-        img: `${IMG}/6f2be55146-0356de1a010ad4f6d224.png`,
+        img: microneedlingImg,
         quickFacts: [
           { label: "Duration", value: "45 mins" },
           { label: "Sessions", value: "4–6 sessions" },
@@ -352,7 +367,7 @@ export const SERVICES = [
         slug: "skin-rejuvenation",
         title: "Skin Rejuvenation",
         desc: "Revitalize tired, dull skin and restore overall texture and tone.",
-        img: `${IMG}/e49bf37624-26634cadea8fab964ff6.png`,
+        img: skinRejuvenationImg,
         quickFacts: [
           { label: "Duration", value: "45 mins" },
           { label: "Sessions", value: "4–6 sessions" },
@@ -396,7 +411,7 @@ export const SERVICES = [
         slug: "prp-therapy",
         title: "PRP Therapy",
         desc: "Platelet-rich plasma therapy to stimulate natural hair regrowth.",
-        img: `${IMG}/90985656b4-4003251c604e1b1ad0b5.png`,
+        img: prpTherapyImg,
         quickFacts: [
           { label: "Duration", value: "45–60 mins" },
           { label: "Sessions", value: "4–6 sessions" },
@@ -432,7 +447,7 @@ export const SERVICES = [
         slug: "gfc-therapy",
         title: "GFC Therapy",
         desc: "Growth factor concentrate therapy for advanced hair restoration.",
-        img: `${IMG}/42ac3b8747-0b9b7bff8bc6df6ec650.png`,
+        img: gfcTherapyImg,
         quickFacts: [
           { label: "Duration", value: "45–60 mins" },
           { label: "Sessions", value: "4–6 sessions" },
@@ -468,7 +483,7 @@ export const SERVICES = [
         slug: "hair-fall-treatment",
         title: "Hair Fall Treatment",
         desc: "Comprehensive diagnostics and treatment plans to halt shedding and promote regrowth.",
-        img: `${IMG}/43be90cbb1-3dfaa253e659484458f2.png`,
+        img: hairFallTreatmentImg,
         quickFacts: [
           { label: "Duration", value: "30–45 mins" },
           { label: "Sessions", value: "6+ sessions" },
@@ -504,7 +519,7 @@ export const SERVICES = [
         slug: "hair-thinning",
         title: "Hair Thinning",
         desc: "Targeted therapies to restore density and thickness to thinning hair.",
-        img: `${IMG}/7b079551b1-db4897831e758f69cd57.png`,
+        img: hairThinningImg,
         quickFacts: [
           { label: "Duration", value: "30–45 mins" },
           { label: "Sessions", value: "6+ sessions" },
@@ -540,7 +555,7 @@ export const SERVICES = [
         slug: "dandruff-treatment",
         title: "Dandruff Treatment",
         desc: "Medical-grade solutions to manage and eliminate persistent dandruff.",
-        img: `${IMG}/addca01659-23ae54ff013fcdc7f04c.png`,
+        img: dandruffTreatmentImg,
         quickFacts: [
           { label: "Duration", value: "20–30 mins" },
           { label: "Sessions", value: "4–6 sessions" },
@@ -576,7 +591,7 @@ export const SERVICES = [
         slug: "scalp-disorders",
         title: "Scalp Disorders",
         desc: "Targeted therapies for itchiness, inflammation, and complex scalp conditions.",
-        img: `${IMG}/020d2ef44f-b513524e6e654ec2e8df.png`,
+        img: scalpDisordersImg,
         quickFacts: [
           { label: "Duration", value: "30 mins" },
           { label: "Sessions", value: "6+ sessions" },
@@ -620,7 +635,7 @@ export const SERVICES = [
         slug: "laser-hair-reduction",
         title: "Laser Hair Reduction",
         desc: "Safe, effective, and long-lasting reduction of unwanted hair.",
-        img: `${IMG}/091c72fa69-d7769f7ff32c323e93d5.png`,
+        img: laserHairReductionImg,
         quickFacts: [
           { label: "Duration", value: "20–60 mins" },
           { label: "Sessions", value: "6–8 sessions" },
@@ -656,7 +671,7 @@ export const SERVICES = [
         slug: "tattoo-removal",
         title: "Tattoo Removal",
         desc: "Safe, effective breakdown of tattoo ink using advanced Q-switched lasers.",
-        img: `${IMG}/cd59487a22-0a7c3e946bde376e725b.png`,
+        img: tattooRemovalImg,
         quickFacts: [
           { label: "Duration", value: "15–30 mins" },
           { label: "Sessions", value: "6–10 sessions" },
@@ -692,7 +707,7 @@ export const SERVICES = [
         slug: "q-switch-laser",
         title: "Q-Switch Laser",
         desc: "High-precision laser technology for pigmentation, tattoos, and skin toning.",
-        img: `${IMG}/37e27111d4-e6eb43299bc6dfb8112d.png`,
+        img: qSwitchLaserImg,
         quickFacts: [
           { label: "Duration", value: "20–30 mins" },
           { label: "Sessions", value: "6–8 sessions" },
@@ -728,7 +743,7 @@ export const SERVICES = [
         slug: "laser-toning",
         title: "Laser Toning",
         desc: "Advanced laser toning to target deep pigmentation and improve overall clarity.",
-        img: `${IMG}/f8c593f73b-892251e8baa9ce1721e7.png`,
+        img: laserToningImg,
         quickFacts: [
           { label: "Duration", value: "20–30 mins" },
           { label: "Sessions", value: "6–8 sessions" },
@@ -764,7 +779,7 @@ export const SERVICES = [
         slug: "carbon-laser-facial",
         title: "Carbon Laser Facial",
         desc: "A deep-cleansing laser facial that refines pores and brightens skin instantly.",
-        img: `${IMG}/3df58b4f96-7a94913761e1af6cfbb2.png`,
+        img: carbonLaserFacialImg,
         quickFacts: [
           { label: "Duration", value: "30–40 mins" },
           { label: "Sessions", value: "Monthly maintenance" },

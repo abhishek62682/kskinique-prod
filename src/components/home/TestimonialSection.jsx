@@ -5,6 +5,9 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/free-mode'
 import { TESTIMONIALS } from '../../config/testimonials'
+import starsOutlineIcon from '../../assets/icons/stars-outline.svg'
+import starsWhiteIcon from '../../assets/icons/stars-white.svg'
+import testimonialPortrait from '../../assets/home/testimonial-portrait.webp'
 
 const TestimonialSection = () => {
  
@@ -85,7 +88,7 @@ const TestimonialSection = () => {
                 <div className="bg-white rounded-3xl p-7 flex flex-col justify-between gap-6 h-full min-h-56">
                   <div className="flex flex-col gap-3">
                     <img
-                      src="https://framerusercontent.com/images/nBmS1U8s92WIveVNePAFLYYFODo.svg?width=60&height=12"
+                      src={starsOutlineIcon}
                       alt="stars"
                       className="w-14"
                     />
@@ -116,7 +119,7 @@ const TestimonialSection = () => {
 
         <div className="w-full lg:w-1/3 h-[500px] rounded-[28px] overflow-hidden relative ">
           <img
-            src="https://framerusercontent.com/images/ipAbYHifCDoQsFyitpmqxk7yTIQ.jpg?width=600&height=799"
+            src={testimonialPortrait}
             alt="Dermatologist with patient"
             className="w-full h-full object-cover "
           />
@@ -126,7 +129,7 @@ const TestimonialSection = () => {
                 5.0
               </h4>
               <img
-                src="https://framerusercontent.com/images/Acl1ppgvFjpXDaMWy2sV8Mlbvc.svg?width=70&height=13"
+                src={starsWhiteIcon}
                 alt="5 stars"
                 className="w-16"
               />

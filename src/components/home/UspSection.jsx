@@ -1,4 +1,5 @@
 import { Stethoscope, Flower2, ShieldCheck, Sparkles, Zap, HeartHandshake } from "lucide-react";
+import clinicTreatmentImg from "../../assets/home/clinic-treatment.webp";
 
 function UspSection() {
   const leftItems = [
@@ -80,7 +81,7 @@ function UspSection() {
           <div className="lg:col-span-4 flex justify-center order-1 lg:order-2">
             <div className="relative w-full max-w-[380px] aspect-[4/5] rounded-[999px] overflow-hidden">
               <img
-                src="https://thedermahouse.com/api/files/472"
+                src={clinicTreatmentImg}
                 alt="Skinique treatment care"
                 className="w-full h-full object-cover"
               />

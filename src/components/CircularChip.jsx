@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import defaultChipImg from "../assets/icons/chip-default.webp";
 
 const CircularChip = ({
   rotate = 0,
   label = "Scar Reduction",
-  image = "https://framerusercontent.com/images/gzen5eX2cjNUuGHxoxYDiHqSP9I.jpg?width=100&height=100",
+  image = defaultChipImg,
   to,
 }) => {
   return (

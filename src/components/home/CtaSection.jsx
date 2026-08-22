@@ -1,5 +1,6 @@
 // CtaSection.jsx
 import Button from "../ui/Button";
+import ctaClinicImg from "../../assets/home/cta-clinic.webp";
 
 export default function CtaSection() {
   return (
@@ -9,7 +10,7 @@ export default function CtaSection() {
       <div className="relative rounded-[30px] overflow-hidden h-105 sm:h-125 lg:h-145">
 
         <img
-          src="https://framerusercontent.com/images/7wuoJ9Ow11xKedGiaTruAqA2UU.jpg?width=1400&height=600"
+          src={ctaClinicImg}
           alt="Skinique Clinic"
           className="absolute inset-0 w-full h-full object-cover"
         />

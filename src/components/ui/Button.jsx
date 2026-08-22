@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import arrowIcon from "../../assets/icons/button-arrow.svg";
 
 const Button = ({
   bgColor = "#f7ecdf",
@@ -19,7 +20,7 @@ const Button = ({
 
       <div className="relative z-10 size-6 flex justify-center items-center rounded-full">
         <img
-          src="https://framerusercontent.com/images/O1tnocyvBNm6Zym1OQLf7n6GMk.svg?width=13&height=13"
+          src={arrowIcon}
           alt=""
         />
       </div>
