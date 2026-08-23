@@ -7,7 +7,7 @@ import storyConsultationImg from "../../assets/about/story-consultation.webp";
 
 export default function OurStorySection() {
   return (
-    <section className="w-full bg-surface relative py-20 sm:py-28">
+    <section className="w-full bg-surface relative pb-[100px] md:pb-[130px] lg:pb-[200px]">
       <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 relative">
         <div className="relative grid grid-cols-1 gap-8">
           <div className="relative flex items-center justify-center">

@@ -23,7 +23,7 @@ export default function DoctorSection() {
   ];
 
   return (
-    <section className="bg-surface w-full px-2.5 sm:px-12.5">
+    <section className="bg-surface w-full px-2.5 sm:px-12.5 pb-[100px] md:pb-[130px] lg:pb-[200px]">
 
 <div className="bg-surface-alt rounded-[30px] px-5  py-20 sm:py-37.5">
 
@@ -84,7 +84,7 @@ export default function DoctorSection() {
                   Dr. Kajal Komalan (MBBS, DDV) believes in combining scientific dermatology with aesthetic artistry to create natural, long-lasting results.
                 </p>
                 <p className="text-[14px] sm:text-[15px] leading-[1.75] text-text-soft font-secondary">
-                  Every consultation focuses on understanding the patient's concerns and designing a personalized treatment plan — because beautiful skin starts with healthy skin, and healthy skin starts with a confident you.
+                  Every consultation focuses on understanding the patient's concerns and designing a personalized treatment plan, because beautiful skin starts with healthy skin, and healthy skin starts with a confident you.
                 </p>
               </div>
 

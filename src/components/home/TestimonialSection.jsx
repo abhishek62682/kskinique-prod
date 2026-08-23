@@ -17,7 +17,7 @@ const TestimonialSection = () => {
   return (
     <section
       id="testimonials"
-      className="relative bg-surface pb-16 sm:pb-20 lg:pb-50 px-4 sm:px-6 lg:px-8  z-10 overflow-hidden"
+      className="relative bg-surface pb-[100px] md:pb-[130px] lg:pb-[200px] px-4 sm:px-6 lg:px-8  z-10 overflow-hidden"
       data-scroll-section=""
     >
       <div className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-16">

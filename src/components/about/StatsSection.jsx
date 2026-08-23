@@ -9,7 +9,7 @@ const STATS = [
 
 export default function StatsSection() {
   return (
-    <section id="stats-achievements" className="py-16 sm:py-20 bg-surface-alt text-center">
+    <section id="stats-achievements" className="py-[50px] md:py-[65px] lg:py-[100px] bg-surface-alt text-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {STATS.map((stat) => (

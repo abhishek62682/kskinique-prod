@@ -10,7 +10,7 @@ export default function PageHero({
 }) {
   return (
     <section className="w-full bg-surface">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 pt-20 sm:pt-28 pb-14 flex flex-col items-center gap-6 text-center">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 pt-20 sm:pt-28 pb-20 sm:pb-24 flex flex-col items-center gap-6 text-center">
 
         {breadcrumbs && breadcrumbs.length > 0 && (
           <nav aria-label="Breadcrumb" className="flex items-center flex-wrap justify-center gap-1.5 text-[12px] font-secondary text-text-soft -mb-2">

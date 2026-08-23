@@ -47,7 +47,7 @@ const About = () => {
     "Great skin shouldn't mean endless appointments and one-size-fits-all treatments. So we brought expert dermatology and aesthetic medicine together under one roof, so you get the personalised care your skin truly deserves.";
   const words = paragraph.split(" ");
 
-  // orbit + image rotation — only set up once the orbit elements actually exist (radius > 0)
+  // orbit + image rotation, only set up once the orbit elements actually exist (radius > 0)
   useEffect(() => {
     if (!radius || !orbitRef.current) return;
 
@@ -75,7 +75,7 @@ const About = () => {
     };
   }, [radius]);
 
-  // scroll-triggered fill text effect — independent of orbit, runs once on mount
+  // scroll-triggered fill text effect, independent of orbit, runs once on mount
   useEffect(() => {
     const wordEls = textRef.current.querySelectorAll(".fill-word");
 
@@ -99,7 +99,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="w-full overflow-x-hidden px-2.5 sm:px-12.5 bg-surface">
+    <div className="w-full overflow-x-hidden px-2.5 sm:px-12.5 bg-surface pb-[100px] md:pb-[130px] lg:pb-[200px]">
       <section className="max-w-full bg-surface-alt space-y-40 rounded-2xl py-30 md:py-50">
 
         {/* ===== Section Header ===== */}

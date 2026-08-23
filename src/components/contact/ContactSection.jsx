@@ -54,7 +54,7 @@ export default function ContactSection() {
 
   return (
     <section className="w-full bg-surface">
-      <div className="w-full max-w-7xl  mx-auto px-4 sm:px-6 py-20 sm:py-28">
+      <div className="w-full max-w-7xl  mx-auto px-4 sm:px-6 pb-[100px] md:pb-[130px] lg:pb-[200px]">
         <div className="grid grid-cols-1 lg:grid-cols-12 rounded-[32px] overflow-hidden">
 
           {/* left info panel */}

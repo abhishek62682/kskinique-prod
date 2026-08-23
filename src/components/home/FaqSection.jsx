@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 const FAQ_CONFIG = [
   {
     q: "How do I know which skin treatment is right for me?",
-    a: "During your first consultation, Dr. Kajal will assess your skin type, concerns, and goals. We use advanced skin analysis tools to create a personalised treatment plan — no guesswork, no generic protocols.",
+    a: "During your first consultation, Dr. Kajal will assess your skin type, concerns, and goals. We use advanced skin analysis tools to create a personalised treatment plan, no guesswork, no generic protocols.",
   },
   {
     q: "Are the treatments painful?",
@@ -17,7 +17,7 @@ const FAQ_CONFIG = [
   },
   {
     q: "What happens at the first consultation?",
-    a: "Your first visit includes a thorough skin assessment, a detailed discussion of your concerns, and an honest walkthrough of your options — with no pressure to commit. We'll outline the plan, expected results, and costs before anything is scheduled.",
+    a: "Your first visit includes a thorough skin assessment, a detailed discussion of your concerns, and an honest walkthrough of your options, with no pressure to commit. We'll outline the plan, expected results, and costs before anything is scheduled.",
   },
   {
     q: "Is laser treatment safe for Indian skin tones?",
@@ -76,7 +76,7 @@ export default function FaqSection() {
 
   return (
     <section className="w-full bg-surface-alt">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-20">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-[100px] md:py-[130px] lg:py-[200px]">
 
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-14">
 

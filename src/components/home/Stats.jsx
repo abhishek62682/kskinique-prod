@@ -1,6 +1,6 @@
 const Stats = () => {
     return (
-        <div className="py-16 md:py-20 px-6 md:px-15 bg-surface">
+        <div className="py-[50px] md:py-[65px] lg:py-[100px] px-6 md:px-15 bg-surface">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-0">
 
                 <div className="flex items-center gap-3 justify-center flex-1">

@@ -13,7 +13,7 @@ import whyUsVideo from "../../assets/home/why-us-video.mp4";
 export default function WhyUsSection() {
   return (
     <section className="w-full bg-surface">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-50 flex flex-col gap-12">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 pb-[100px] md:pb-[130px] lg:pb-[200px] flex flex-col gap-12">
 
         {/* Header */}
         <div className="flex flex-col items-center gap-3">
@@ -31,7 +31,7 @@ export default function WhyUsSection() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
-          {/* Card A: Before/After — full height on lg, spans 2 rows */}
+          {/* Card A: Before/After, full height on lg, spans 2 rows */}
           <div className="relative rounded-[24px] overflow-hidden min-h-80 sm:row-span-2 sm:col-span-1">
             <img
               src={afterImg}
@@ -114,7 +114,7 @@ export default function WhyUsSection() {
             </div>
           </div>
 
-          {/* Card E: Photo — spans 2 rows on lg */}
+          {/* Card E: Photo, spans 2 rows on lg */}
           <div className="rounded-[24px] overflow-hidden min-h-62.5 sm:row-span-2">
             <img
               src={photoImg}

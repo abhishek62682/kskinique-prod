@@ -3,7 +3,7 @@
 export default function BenefitsList({ benefits = [] }) {
   return (
     <section className="w-full bg-surface">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-[100px] md:py-[130px] lg:py-[200px]">
         <div className="flex flex-col items-center gap-3 text-center mb-16 sm:mb-20">
           <div className="py-1.5 px-3 flex items-center gap-2.5 rounded-[30px] bg-primary-05 w-fit">
             <div className="size-1.5 rounded-full bg-primary-label" />

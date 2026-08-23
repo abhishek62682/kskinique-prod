@@ -23,7 +23,7 @@ export const TESTIMONIALS = [
     rating: 5,
     concern: "HydraFacial",
     quote:
-      "I'm so happy I visited Dr. Kajal Komalan for a HydraFacial and Vitamin C peel. She was incredibly thorough and understood my skin immediately—she even called…",
+      "I'm so happy I visited Dr. Kajal Komalan for a HydraFacial and Vitamin C peel. She was incredibly thorough and understood my skin immediately, she even called…",
   },
   {
     name: "mahima gandhi",

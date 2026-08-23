@@ -6,7 +6,7 @@ export default function TreatmentsGrid({ categories }) {
 
   return (
     <section className="w-full bg-surface">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20 flex flex-col gap-20">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 pb-[100px] md:pb-[130px] lg:pb-[200px] flex flex-col gap-20">
 
         {visibleCategories.length === 0 && (
           <p className="text-center text-text-soft font-secondary text-[15px] py-16">

@@ -6,7 +6,7 @@ import benefitsDecor from "../../assets/icons/benefits-decor.svg";
 export default function BenefitsCards() {
   return (
     <section className="w-full bg-surface">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 pb-[100px] md:pb-[130px] lg:pb-[200px]">
          {/* Header */}
           <div className="flex flex-col items-center gap-3 text-center mb-16 sm:mb-20">
             <div className="py-1.5 px-3 flex items-center gap-2.5 rounded-[30px] bg-primary-05 w-fit">
@@ -42,12 +42,12 @@ export default function BenefitsCards() {
             </div>
 
             <p className="text-[14px] sm:text-[15px] leading-[1.7] text-text-soft font-secondary">
-              MBBS, DDV certified — every <br /> treatment is physician-led
+              MBBS, DDV certified, every <br /> treatment is physician-led
             </p>
           </div>
 
           {/* Card 2: USFDA Approved Technology */}
-          <div className="relative rounded-[24px] bg-primary-05 overflow-hidden px-7 pt-9 pb-8 flex flex-col gap-3">
+          <div className="min-h-[280px] sm:min-h-0 relative rounded-[24px] bg-primary-05 overflow-hidden px-7 pt-9 pb-8 flex flex-col gap-3">
             <h3 className="text-[24px] sm:text-[26px] font-primary text-primary-dark leading-tight">
               USFDA Approved Technology
             </h3>

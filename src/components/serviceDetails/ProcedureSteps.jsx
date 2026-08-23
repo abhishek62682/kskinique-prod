@@ -7,7 +7,7 @@ export default function ProcedureSteps({
 }) {
   return (
     <section className="bg-surface-alt">
-      <div className="bg-surface-alt rounded-[30px] px-5 py-20 sm:py-37.5">
+      <div className="bg-surface-alt rounded-[30px] px-5 py-[100px] md:py-[130px] lg:py-[200px]">
         <div className="w-full max-w-7xl mx-auto">
 
           <div className="flex flex-col items-center gap-3 text-center mb-16 sm:mb-20">

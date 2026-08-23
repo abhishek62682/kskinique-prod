@@ -1,6 +1,6 @@
 // services.js
 //
-// Single source of truth for every treatment on the site — grouped by category,
+// Single source of truth for every treatment on the site, grouped by category,
 // each service carrying everything needed for both the listing card and its
 // dedicated detail page (desc/img for cards; about/quickFacts/suitability/
 // benefits/procedure/faqs for the detail page). Add a new treatment by adding
@@ -51,7 +51,7 @@ export const SERVICES = [
           { label: "Results", value: "Visible in 4–6 weeks" },
         ],
         about:
-          "Our acne protocol combines medical-grade extractions, peels, and laser resurfacing to calm active breakouts and smooth post-acne scarring. Dr. Kajal designs a plan around your acne type — hormonal, cystic, or comedonal — rather than a one-size-fits-all routine.",
+          "Our acne protocol combines medical-grade extractions, peels, and laser resurfacing to calm active breakouts and smooth post-acne scarring. Dr. Kajal designs a plan around your acne type, hormonal, cystic, or comedonal, rather than a one-size-fits-all routine.",
         suitability: [
           "You have persistent or recurring breakouts that haven't responded to over-the-counter products.",
           "You have visible acne scarring, pitting, or dark marks left behind by past breakouts.",
@@ -69,7 +69,7 @@ export const SERVICES = [
           { number: "04", title: "Aftercare", description: "You'll get a home-care routine to prevent new breakouts and protect healing skin." },
         ],
         faqs: [
-          { q: "Will this treatment help with acne scars too?", a: "Yes — active acne and scarring are often treated together using peels, microneedling, or laser resurfacing depending on scar type." },
+          { q: "Will this treatment help with acne scars too?", a: "Yes, active acne and scarring are often treated together using peels, microneedling, or laser resurfacing depending on scar type." },
           { q: "How soon will my breakouts calm down?", a: "Most patients see visibly calmer skin within 4–6 weeks, though full scar improvement takes longer." },
           { q: "Can I wear makeup after treatment?", a: "We recommend avoiding makeup for 24 hours after extractions or laser sessions to let your skin recover, after which you can resume your normal routine." },
           { q: "Is this suitable for sensitive or acne-prone skin?", a: "Yes, every protocol is tailored to your specific skin sensitivity, and a patch test is done where needed before more intensive treatments." },
@@ -90,7 +90,7 @@ export const SERVICES = [
           "Pigmentation and melasma are treated with a combination of peels, laser toning, and targeted topicals to gently break down excess pigment without irritating the skin barrier. Treatment is paced carefully, since melasma especially responds best to a slow, consistent approach.",
         suitability: [
           "You have dark spots, sun damage, or uneven patches of skin tone.",
-          "You have melasma — symmetrical brown patches, often on the cheeks or upper lip.",
+          "You have melasma, symmetrical brown patches, often on the cheeks or upper lip.",
           "You've tried brightening creams without lasting improvement.",
         ],
         benefits: [
@@ -105,9 +105,9 @@ export const SERVICES = [
           { number: "04", title: "Aftercare", description: "Strict sun protection and a maintenance routine are prescribed to lock in results." },
         ],
         faqs: [
-          { q: "Is melasma treatment different from regular pigmentation treatment?", a: "Yes — melasma is hormonally driven and needs a gentler, more gradual protocol to avoid rebound darkening." },
+          { q: "Is melasma treatment different from regular pigmentation treatment?", a: "Yes, melasma is hormonally driven and needs a gentler, more gradual protocol to avoid rebound darkening." },
           { q: "Will the pigmentation come back?", a: "With consistent sun protection and maintenance, results are long-lasting, though melasma can be sensitive to sun and hormonal changes." },
-          { q: "Can I get this treatment if I'm pregnant or breastfeeding?", a: "Some treatments aren't recommended during pregnancy or breastfeeding — we'll review your history at consultation and suggest safe alternatives if needed." },
+          { q: "Can I get this treatment if I'm pregnant or breastfeeding?", a: "Some treatments aren't recommended during pregnancy or breastfeeding, we'll review your history at consultation and suggest safe alternatives if needed." },
           { q: "How soon can I go out in the sun after treatment?", a: "Strict sun protection is essential for at least a few weeks post-treatment to protect your results and avoid rebound pigmentation." },
         ],
       },
@@ -123,7 +123,7 @@ export const SERVICES = [
           { label: "Results", value: "Visible after 1st session" },
         ],
         about:
-          "Chemical peels use a customized acid formulation to gently exfoliate the outer skin layer, revealing brighter, smoother skin underneath. Strength and formulation are adjusted to your skin type and concern — from mild glow-boosting peels to deeper resurfacing peels.",
+          "Chemical peels use a customized acid formulation to gently exfoliate the outer skin layer, revealing brighter, smoother skin underneath. Strength and formulation are adjusted to your skin type and concern, from mild glow-boosting peels to deeper resurfacing peels.",
         suitability: [
           "You want to improve dullness, rough texture, or uneven tone.",
           "You have mild acne, pigmentation, or early signs of aging.",
@@ -143,8 +143,8 @@ export const SERVICES = [
         faqs: [
           { q: "Will my skin visibly peel afterward?", a: "Mild peels cause little to no visible peeling; deeper peels may cause light flaking for a few days." },
           { q: "How many sessions will I need?", a: "Most patients see the best results with a course of 4–6 sessions spaced a few weeks apart." },
-          { q: "Can chemical peels be combined with other treatments?", a: "Yes, peels are often paired with treatments like microneedling or laser toning for enhanced results — your specialist will advise on the right combination." },
-          { q: "Is there an age limit for chemical peels?", a: "No strict age limit — peel strength and frequency are adjusted based on your skin's needs, not your age." },
+          { q: "Can chemical peels be combined with other treatments?", a: "Yes, peels are often paired with treatments like microneedling or laser toning for enhanced results, your specialist will advise on the right combination." },
+          { q: "Is there an age limit for chemical peels?", a: "No strict age limit, peel strength and frequency are adjusted based on your skin's needs, not your age." },
         ],
       },
       {
@@ -177,10 +177,10 @@ export const SERVICES = [
           { number: "04", title: "Protect", description: "A finishing layer of SPF and hydration locks in your glow." },
         ],
         faqs: [
-          { q: "Is HydraFacial suitable before an event?", a: "Yes — it's one of our most popular pre-event treatments because results are visible immediately with no downtime." },
+          { q: "Is HydraFacial suitable before an event?", a: "Yes, it's one of our most popular pre-event treatments because results are visible immediately with no downtime." },
           { q: "How often should I get one?", a: "Monthly sessions work well for maintaining hydration, clarity, and glow." },
           { q: "Is HydraFacial suitable for sensitive skin?", a: "Yes, it's one of the gentler treatments available and can be customized further for sensitive or reactive skin types." },
-          { q: "Can men get a HydraFacial too?", a: "Absolutely — HydraFacial works well for all skin types and genders looking for deep cleansing and hydration." },
+          { q: "Can men get a HydraFacial too?", a: "Absolutely, HydraFacial works well for all skin types and genders looking for deep cleansing and hydration." },
         ],
       },
       {
@@ -213,7 +213,7 @@ export const SERVICES = [
           { number: "04", title: "Aftercare", description: "Sun protection and a brightening home-care routine maintain your results." },
         ],
         faqs: [
-          { q: "Will this make my skin unnaturally lighter?", a: "No — the goal is to restore your natural radiance and even tone, not lighten your skin beyond its baseline." },
+          { q: "Will this make my skin unnaturally lighter?", a: "No, the goal is to restore your natural radiance and even tone, not lighten your skin beyond its baseline." },
           { q: "How long do results last?", a: "With consistent sun protection, brightening results typically last several months between maintenance sessions." },
           { q: "Is skin brightening safe for all skin types?", a: "Yes, the protocol is customized to your skin type and tone to ensure safe, even results." },
           { q: "Can I combine this with sunscreen and makeup?", a: "Yes, and we recommend daily sunscreen to protect and prolong your brightening results." },
@@ -249,10 +249,10 @@ export const SERVICES = [
           { number: "04", title: "Aftercare", description: "A supportive skincare routine helps extend and enhance your results." },
         ],
         faqs: [
-          { q: "At what age should I start anti-ageing treatments?", a: "Preventive treatments can start in your late 20s or 30s, but it's never too late to begin — your plan is built around your skin, not your age." },
+          { q: "At what age should I start anti-ageing treatments?", a: "Preventive treatments can start in your late 20s or 30s, but it's never too late to begin, your plan is built around your skin, not your age." },
           { q: "Is this a surgical treatment?", a: "No, our anti-ageing protocols are entirely non-surgical, using peels, microneedling, and laser technology." },
           { q: "Will I need to repeat sessions regularly?", a: "Most patients benefit from periodic maintenance sessions to sustain collagen stimulation and results over time." },
-          { q: "Can this be combined with injectables like Botox?", a: "Yes, many patients combine non-surgical anti-ageing treatments with injectables for a more complete result — we'll advise what suits you best." },
+          { q: "Can this be combined with injectables like Botox?", a: "Yes, many patients combine non-surgical anti-ageing treatments with injectables for a more complete result, we'll advise what suits you best." },
         ],
       },
       {
@@ -323,7 +323,7 @@ export const SERVICES = [
         faqs: [
           { q: "Can stretch marks be fully removed?", a: "Complete removal isn't realistic with any treatment, but texture and color can improve significantly over a course of sessions." },
           { q: "Do newer stretch marks respond better?", a: "Yes, newer reddish-purple marks typically respond faster than older, white, mature stretch marks." },
-          { q: "Which body areas can be treated?", a: "Common areas include the abdomen, thighs, hips, and arms — any area affected by stretch marks can be assessed for treatment." },
+          { q: "Which body areas can be treated?", a: "Common areas include the abdomen, thighs, hips, and arms, any area affected by stretch marks can be assessed for treatment." },
           { q: "Is this treatment painful?", a: "Most patients experience only mild discomfort, and a numbing cream can be applied for added comfort during laser sessions." },
         ],
       },
@@ -358,7 +358,7 @@ export const SERVICES = [
         ],
         faqs: [
           { q: "Can pores actually be made smaller?", a: "Pore size is largely genetic, but treatment can visibly minimize their appearance by improving texture and reducing congestion." },
-          { q: "Will this help with blackheads too?", a: "Yes — the same protocol that refines pores also helps clear the congestion that leads to blackheads." },
+          { q: "Will this help with blackheads too?", a: "Yes, the same protocol that refines pores also helps clear the congestion that leads to blackheads." },
           { q: "How long do results last?", a: "With consistent home care and periodic maintenance sessions, refined pore appearance can be sustained long-term." },
           { q: "Is this suitable for oily skin?", a: "Yes, this protocol is especially well-suited for oily and congestion-prone skin types." },
         ],
@@ -427,7 +427,7 @@ export const SERVICES = [
         ],
         benefits: [
           { icon: "ri-heart-pulse-line", title: "Natural Regrowth", description: "Uses your own platelets to stimulate hair follicles." },
-          { icon: "ri-shield-check-line", title: "Minimally Invasive", description: "No surgery, no synthetic products — just your own blood plasma." },
+          { icon: "ri-shield-check-line", title: "Minimally Invasive", description: "No surgery, no synthetic products, just your own blood plasma." },
           { icon: "ri-sparkling-2-line", title: "Strengthens Hair", description: "Improves thickness and density of existing hair over time." },
         ],
         procedure: [
@@ -439,7 +439,7 @@ export const SERVICES = [
         faqs: [
           { q: "Is PRP therapy painful?", a: "A numbing agent is applied to the scalp beforehand, so discomfort is minimal." },
           { q: "How many sessions will I need?", a: "Most patients see visible improvement after 4–6 sessions spaced about a month apart." },
-          { q: "Are there any side effects of PRP therapy?", a: "Since PRP uses your own blood, side effects are minimal — mild redness or tenderness at injection sites is normal and resolves quickly." },
+          { q: "Are there any side effects of PRP therapy?", a: "Since PRP uses your own blood, side effects are minimal, mild redness or tenderness at injection sites is normal and resolves quickly." },
           { q: "How long do PRP results last?", a: "Results build gradually and are typically maintained with periodic touch-up sessions every few months." },
         ],
       },
@@ -474,7 +474,7 @@ export const SERVICES = [
         ],
         faqs: [
           { q: "How is GFC different from PRP?", a: "GFC uses a more concentrated growth-factor formulation, often recommended for more advanced thinning or when PRP alone isn't enough." },
-          { q: "Can I combine GFC with other hair treatments?", a: "Yes, GFC is often combined with microneedling or mesotherapy for enhanced results — your specialist will tailor this to your scalp." },
+          { q: "Can I combine GFC with other hair treatments?", a: "Yes, GFC is often combined with microneedling or mesotherapy for enhanced results, your specialist will tailor this to your scalp." },
           { q: "Is GFC therapy painful?", a: "A numbing agent is applied to the scalp beforehand, so most patients experience only mild discomfort." },
           { q: "How soon will I see results?", a: "Most patients notice reduced shedding within a few weeks, with visible thickness improvements over 3–4 months." },
         ],
@@ -491,7 +491,7 @@ export const SERVICES = [
           { label: "Results", value: "Visible in 3 months" },
         ],
         about:
-          "Hair fall is investigated thoroughly — from nutritional and hormonal factors to scalp health — before building a treatment plan combining medical therapy, PRP/GFC, and scalp care to bring shedding under control and support regrowth.",
+          "Hair fall is investigated thoroughly, from nutritional and hormonal factors to scalp health, before building a treatment plan combining medical therapy, PRP/GFC, and scalp care to bring shedding under control and support regrowth.",
         suitability: [
           "You're noticing excessive daily hair shedding.",
           "You want to identify the underlying cause, not just treat the symptom.",
@@ -509,7 +509,7 @@ export const SERVICES = [
           { number: "04", title: "Follow-up", description: "Progress is tracked and the plan is adjusted over your treatment course." },
         ],
         faqs: [
-          { q: "Is some hair fall normal?", a: "Yes, shedding 50–100 hairs a day is normal — we help identify when it crosses into excessive hair fall that needs treatment." },
+          { q: "Is some hair fall normal?", a: "Yes, shedding 50–100 hairs a day is normal, we help identify when it crosses into excessive hair fall that needs treatment." },
           { q: "How soon will shedding reduce?", a: "Most patients notice reduced shedding within 8–12 weeks of starting a tailored plan." },
           { q: "Do I need blood tests before starting treatment?", a: "Basic investigations may be recommended if a nutritional or hormonal cause is suspected, to guide the most effective treatment plan." },
           { q: "Is hair fall treatment different for men and women?", a: "The underlying causes can differ, so your plan is tailored to your specific pattern and history rather than a generic protocol." },
@@ -563,7 +563,7 @@ export const SERVICES = [
           { label: "Results", value: "Visible in 2–4 weeks" },
         ],
         about:
-          "Persistent dandruff is treated with medical-grade scalp therapy and topical treatment to control flaking, itchiness, and underlying seborrheic dermatitis — going beyond what over-the-counter shampoos can address.",
+          "Persistent dandruff is treated with medical-grade scalp therapy and topical treatment to control flaking, itchiness, and underlying seborrheic dermatitis, going beyond what over-the-counter shampoos can address.",
         suitability: [
           "You have persistent flaking that doesn't improve with anti-dandruff shampoos.",
           "Your scalp feels itchy, irritated, or inflamed.",
@@ -581,7 +581,7 @@ export const SERVICES = [
           { number: "04", title: "Home Care", description: "You'll get a maintenance routine to keep flaking under control." },
         ],
         faqs: [
-          { q: "Is dandruff the same as a dry scalp?", a: "Not always — dandruff can stem from several causes including fungal overgrowth, which we assess and treat accordingly." },
+          { q: "Is dandruff the same as a dry scalp?", a: "Not always, dandruff can stem from several causes including fungal overgrowth, which we assess and treat accordingly." },
           { q: "How quickly will flaking reduce?", a: "Most patients see noticeable improvement within 2–4 weeks of starting treatment." },
           { q: "Can dandruff come back after treatment?", a: "With a consistent maintenance routine, flaking is generally well-controlled, though some scalps may need periodic touch-ups." },
           { q: "Is this treatment suitable for colored or chemically treated hair?", a: "Yes, treatment is adjusted to be gentle on colored or chemically treated hair while still effectively managing dandruff." },
@@ -599,7 +599,7 @@ export const SERVICES = [
           { label: "Results", value: "Progressive over weeks" },
         ],
         about:
-          "Complex scalp conditions — from folliculitis to psoriasis-related scalp issues — are diagnosed and treated with medical therapy tailored to the specific condition, aiming to restore a calm, healthy scalp as the foundation for healthy hair.",
+          "Complex scalp conditions, from folliculitis to psoriasis-related scalp issues, are diagnosed and treated with medical therapy tailored to the specific condition, aiming to restore a calm, healthy scalp as the foundation for healthy hair.",
         suitability: [
           "You have ongoing scalp itchiness, redness, or inflammation.",
           "You've been diagnosed with or suspect a scalp condition beyond simple dandruff.",
@@ -620,7 +620,7 @@ export const SERVICES = [
           { q: "Can scalp disorders affect hair growth?", a: "Yes, untreated scalp conditions can contribute to hair thinning or shedding, which is why we treat the scalp before or alongside hair loss treatment." },
           { q: "Are these conditions curable?", a: "Many scalp conditions can be effectively managed and controlled with the right treatment plan, even if not always permanently cured." },
           { q: "Do I need a scalp biopsy or special tests?", a: "Most scalp conditions can be diagnosed through examination alone; further tests are only recommended if needed for an accurate diagnosis." },
-          { q: "How long does treatment typically take?", a: "This varies by condition — some clear up in a few weeks, while chronic conditions may need ongoing management." },
+          { q: "How long does treatment typically take?", a: "This varies by condition, some clear up in a few weeks, while chronic conditions may need ongoing management." },
         ],
       },
     ],
@@ -698,8 +698,8 @@ export const SERVICES = [
         ],
         faqs: [
           { q: "Does tattoo removal hurt?", a: "A numbing agent is used to minimize discomfort, though some sensation is normal during treatment." },
-          { q: "How many sessions will full removal take?", a: "This depends on ink color, depth, and size — most tattoos need 6–10 sessions spaced 6–8 weeks apart." },
-          { q: "Will there be scarring after tattoo removal?", a: "When proper aftercare is followed, scarring is uncommon — our team will guide you through the healing process to minimize any risk." },
+          { q: "How many sessions will full removal take?", a: "This depends on ink color, depth, and size, most tattoos need 6–10 sessions spaced 6–8 weeks apart." },
+          { q: "Will there be scarring after tattoo removal?", a: "When proper aftercare is followed, scarring is uncommon, our team will guide you through the healing process to minimize any risk." },
           { q: "Can all tattoo colors be removed?", a: "Most ink colors respond well to Q-switched laser treatment, though some colors may require more sessions than others." },
         ],
       },
@@ -787,7 +787,7 @@ export const SERVICES = [
           { label: "Results", value: "Immediate glow" },
         ],
         about:
-          "Carbon laser facial applies a fine layer of medical-grade carbon to the skin, which is then targeted with laser to deep-clean pores, exfoliate dead skin, and stimulate mild collagen renewal — leaving skin instantly smoother and brighter.",
+          "Carbon laser facial applies a fine layer of medical-grade carbon to the skin, which is then targeted with laser to deep-clean pores, exfoliate dead skin, and stimulate mild collagen renewal, leaving skin instantly smoother and brighter.",
         suitability: [
           "You want an instant glow with zero downtime.",
           "You have oily or congested skin with visible pores.",

@@ -3,7 +3,7 @@
 export default function AboutTreatment({ title, about, image, quickFacts = [] }) {
   return (
     <section className="w-full bg-surface">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 pb-[100px] md:pb-[130px] lg:pb-[200px]">
         <div className="flex flex-col-reverse lg:flex-row gap-10 lg:gap-16 items-center">
           <div className="w-full lg:w-1/2 flex flex-col gap-6">
             <div className="py-1.5 px-3 flex items-center gap-2.5 rounded-[30px] bg-primary-05 w-fit">
