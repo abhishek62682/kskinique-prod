@@ -6,22 +6,25 @@ const contactItems = [
     icon: "ri-map-pin-2-line",
     title: "Clinic Address",
     content:
-      "Tower, A-216, B Wing, 217, 218, opposite Nimantran Hotel, Sector 15, CBD Belapur, Navi Mumbai, Maharashtra 400614",
+      "Tower, A Wing, 216, 220, B Wing, 217, 218, opposite Nimantran Hotel, Sector 15, CBD Belapur, Navi Mumbai, Maharashtra 400614",
+    href: "https://www.google.com/maps?cid=17611080526173218198",
   },
   {
     icon: "ri-phone-line",
     title: "Phone",
     content: "+91 70212 10819",
+    href: "tel:+917021210819",
   },
   {
     icon: "ri-mail-line",
     title: "Email Address",
     content: "support@kskinique.com",
+    href: "mailto:support@kskinique.com",
   },
   {
     icon: "ri-time-line",
     title: "Business Hours",
-    content: "Open all days, 11:00 AM – 7:00 PM",
+    content: "Mon-Sun, 11:00 AM – 7:00 PM",
   },
 ];
 
@@ -49,7 +52,20 @@ export default function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form);
+
+    const lines = [
+      "New enquiry from the website:",
+      `Name: ${form.name}`,
+      `Contact Number: ${form.contact}`,
+      form.email && `Email: ${form.email}`,
+      form.service && `Service: ${form.service}`,
+      form.message && `Message: ${form.message}`,
+    ].filter(Boolean);
+
+    const text = encodeURIComponent(lines.join("\n"));
+    window.open(`https://wa.me/917021210819?text=${text}`, "_blank", "noopener,noreferrer");
+
+    setForm({ name: "", contact: "", service: "", email: "", message: "" });
   };
 
   return (
@@ -85,9 +101,20 @@ export default function ContactSection() {
                       <h3 className="text-[16px] font-medium text-text-light font-secondary">
                         {item.title}
                       </h3>
-                      <p className="max-w-sm text-[14px] leading-[1.7] text-text-light/70 font-secondary">
-                        {item.content}
-                      </p>
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          target={item.href.startsWith("http") ? "_blank" : undefined}
+                          rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                          className="max-w-sm text-[14px] leading-[1.7] text-text-light/70 font-secondary hover:text-text-light hover:underline transition-colors duration-200 w-fit"
+                        >
+                          {item.content}
+                        </a>
+                      ) : (
+                        <p className="max-w-sm text-[14px] leading-[1.7] text-text-light/70 font-secondary">
+                          {item.content}
+                        </p>
+                      )}
                     </div>
                   </div>
                 ))}

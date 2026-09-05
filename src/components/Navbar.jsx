@@ -68,14 +68,14 @@ export default function Navbar() {
 
           {/* LEFT */}
           <div className="flex items-center flex-1">
-            <div className="flex md:hidden items-center gap-2 font-primary text-[20px] text-primary-dark">
+            <Link to="/" className="flex md:hidden items-center gap-2 font-primary text-[20px] text-primary-dark">
               <img
                 src="/logo.png"
                 alt="Skinique"
                 className="w-20"
               />
               {/* <span>Skinique</span> */}
-            </div>
+            </Link>
 
             <div className="hidden md:flex items-center gap-6 font-secondary">
               <Link to="/" className="text-sm text-text transition-all duration-300 hover:opacity-60">
@@ -116,14 +116,14 @@ export default function Navbar() {
           </div>
 
           {/* CENTER LOGO */}
-          <div className="hidden md:flex flex-1 items-center justify-center gap-2 font-primary text-[22px] text-text whitespace-nowrap pointer-events-none">
+          <Link to="/" className="hidden md:flex flex-1 items-center justify-center gap-2 font-primary text-[22px] text-text whitespace-nowrap">
             <img
               src="/logo.png"
               alt="Skinique"
               className="w-25"
             />
             {/* <span>Skinique</span> */}
-          </div>
+          </Link>
 
           {/* RIGHT */}
           <div className="flex items-center justify-end gap-3 flex-1">
@@ -166,7 +166,9 @@ export default function Navbar() {
       >
         {/* Sheet header */}
         <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-border">
-          <img src="/logo.png" alt="Skinique" className="w-20" />
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            <img src="/logo.png" alt="Skinique" className="w-20" />
+          </Link>
           <button
             onClick={() => setMenuOpen(false)}
             aria-label="Close menu"

@@ -13,7 +13,7 @@ export default function ContactHero() {
         </div>
 
         <h1 className="text-[38px] sm:text-[46px] md:text-[52px] font-primary text-primary-dark leading-none">
-          Let's talk about your <span className="text-primary-label">skin</span> goals.
+          Let's talk about your <span className="text-primary-label">skin & hair</span> goals.
         </h1>
 
         <p className="text-[14px] sm:text-[15px] text-text-soft max-w-[560px] leading-[1.6] font-secondary">

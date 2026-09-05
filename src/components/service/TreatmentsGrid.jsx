@@ -1,8 +1,12 @@
 // TreatmentsGrid.jsx
+import { Link } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
 
 export default function TreatmentsGrid({ categories }) {
   const visibleCategories = categories.filter((cat) => cat.services?.length > 0);
+  // only show the "explore" category link on the combined /services listing,
+  // not on a single-category page where it would just link to itself
+  const showCategoryLink = visibleCategories.length > 1;
 
   return (
     <section className="w-full bg-surface">
@@ -20,6 +24,14 @@ export default function TreatmentsGrid({ categories }) {
               <h2 className="font-primary text-[24px] sm:text-[28px] text-primary-dark whitespace-nowrap capitalize">
                 {cat.label} Treatments
               </h2>
+              {showCategoryLink && (
+                <Link
+                  to={`/services/${cat.category}`}
+                  className="text-[13px] font-secondary text-primary-label hover:underline whitespace-nowrap"
+                >
+                  Explore {cat.label} Treatments
+                </Link>
+              )}
               {/* <div className="h-px bg-border flex-1 hidden sm:block" /> */}
             </div>
 

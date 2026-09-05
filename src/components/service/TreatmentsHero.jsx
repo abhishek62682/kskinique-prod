@@ -13,12 +13,12 @@ export default function TreatmentsHero({ query, onQueryChange }) {
         </div>
 
         <h1 className="text-[38px] sm:text-[46px] md:text-[52px] font-primary text-primary-dark leading-none">
-          Bespoke solutions for <span className="text-primary-label">radiant</span> skin.
+          Bespoke solutions, <span className="text-primary-label">tailored</span> to you.
         </h1>
 
         <p className="text-[14px] sm:text-[15px] text-text-soft max-w-[560px] leading-[1.6] font-secondary">
           Explore our comprehensive range of dermatological and aesthetic services, tailored to
-          enhance your natural beauty and address your unique skin concerns.
+          enhance your natural beauty and address your unique skin, hair, and scalp concerns.
         </p>
 
         <div className="relative w-full max-w-[560px] mt-2">

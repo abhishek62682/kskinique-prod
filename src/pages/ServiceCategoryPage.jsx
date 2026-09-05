@@ -5,6 +5,8 @@ import TreatmentsGrid from "../components/service/TreatmentsGrid";
 import BenefitsCards from "../components/service/BenefitsCards";
 import ProcessSection from "../components/service/ProcessSection";
 import { getCategory } from "../config/services";
+import SEO from "../components/seo/SEO";
+import { CATEGORY_SEO, buildBreadcrumbSchema } from "../config/seo";
 
 export default function ServiceCategoryPage() {
   const { category } = useParams();
@@ -13,6 +15,12 @@ export default function ServiceCategoryPage() {
   if (!cat) {
     return (
       <main className="w-full bg-surface">
+        <SEO
+          title="Category Not Found | Skinique Dermatology"
+          description="This treatment category doesn't exist or may have been moved."
+          canonical={`/services/${category}`}
+          robots="noindex, nofollow"
+        />
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-28 flex flex-col items-center gap-6 text-center">
           <h1 className="text-[32px] font-primary text-primary-dark">Category not found</h1>
           <p className="text-[14px] sm:text-[15px] text-text-soft font-secondary">
@@ -26,14 +34,26 @@ export default function ServiceCategoryPage() {
     );
   }
 
+  const seo = CATEGORY_SEO[cat.category] ?? {
+    title: `${cat.label} Treatments | Skinique Dermatology`,
+    description: cat.description,
+  };
+  const breadcrumbs = [
+    { label: "Home", to: "/" },
+    { label: "Services", to: "/services" },
+    { label: cat.label },
+  ];
+
   return (
     <main className="w-full">
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        canonical={`/services/${cat.category}`}
+        schema={buildBreadcrumbSchema(breadcrumbs, `/services/${cat.category}`)}
+      />
       <PageHero
-        breadcrumbs={[
-          { label: "Home", to: "/" },
-          { label: "Services", to: "/services" },
-          { label: cat.label },
-        ]}
+        breadcrumbs={breadcrumbs}
         badgeText="Our Services"
         heading={`${cat.label} Treatments`}
         description={cat.description}

@@ -4,8 +4,8 @@ import Button from "../ui/Button";
 
 const FAQ_CONFIG = [
   {
-    q: "How do I know which skin treatment is right for me?",
-    a: "During your first consultation, Dr. Kajal will assess your skin type, concerns, and goals. We use advanced skin analysis tools to create a personalised treatment plan, no guesswork, no generic protocols.",
+    q: "How do I know which treatment is right for me?",
+    a: "During your first consultation, Dr. Kajal will assess your concern, whether it's skin, hair, or scalp related, along with your goals, and build a treatment plan around you. No guesswork, no generic protocols.",
   },
   {
     q: "Are the treatments painful?",
@@ -13,19 +13,19 @@ const FAQ_CONFIG = [
   },
   {
     q: "How many sessions will I need?",
-    a: "It depends on the treatment and your skin's response. Some concerns like mild pigmentation may resolve in 2–3 sessions, while others like acne scarring or hair restoration may require 6–8. We'll give you a realistic timeline upfront.",
+    a: "It depends on the treatment and how you respond to it. Some concerns like mild pigmentation may resolve in 2–3 sessions, while others like acne scarring or hair thinning may need 6–8. We'll give you a realistic timeline upfront.",
   },
   {
     q: "What happens at the first consultation?",
-    a: "Your first visit includes a thorough skin assessment, a detailed discussion of your concerns, and an honest walkthrough of your options, with no pressure to commit. We'll outline the plan, expected results, and costs before anything is scheduled.",
+    a: "Your first visit includes a thorough assessment of your skin, hair, or scalp, a detailed discussion of your concerns, and an honest walkthrough of your options, with no pressure to commit. We'll outline the plan, expected results, and costs before anything is scheduled.",
   },
   {
     q: "Is laser treatment safe for Indian skin tones?",
-    a: "Yes. We use clinically proven laser technologies specifically calibrated for darker skin tones. Dr. Kajal has extensive experience treating a wide range of skin types safely and effectively.",
+    a: "Yes. We use clinically proven laser technologies specifically calibrated for darker skin tones, across our hair reduction, pigmentation, and toning treatments. Dr. Kajal has extensive experience treating a wide range of skin types safely and effectively.",
   },
   {
     q: "How long do results last?",
-    a: "Results vary by treatment. Laser hair removal offers long-term reduction after completing sessions. Skin rejuvenation results can last 12–18 months with proper skincare. We'll guide you on maintenance during your consultation.",
+    a: "Results vary by treatment. Laser hair reduction offers long-term reduction after completing your sessions, hair restoration treatments like PRP build progressively over several sessions, and skin treatments can last months with proper aftercare. We'll guide you on maintenance during your consultation.",
   },
   {
     q: "Do you offer EMI or flexible payment options?",

@@ -9,7 +9,7 @@ const PROCESS_STEPS = [
   {
     number: "02",
     title: "Analysis",
-    description: "Comprehensive skin assessment.",
+    description: "Comprehensive skin, hair & scalp assessment.",
   },
   {
     number: "03",

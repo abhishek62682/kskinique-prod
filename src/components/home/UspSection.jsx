@@ -1,5 +1,5 @@
 import { Stethoscope, Flower2, ShieldCheck, Sparkles, Zap, HeartHandshake } from "lucide-react";
-import clinicTreatmentImg from "../../assets/home/clinic-treatment.webp";
+import clinicTreatmentImg from "../../assets/clinic/IMG_0132.webp";
 
 function UspSection() {
   const leftItems = [
@@ -13,7 +13,7 @@ function UspSection() {
       icon: Flower2,
       title: "Personalized Treatment Plans",
       description:
-        "Customized to your skin type, concern, and goals, never one-size-fits-all.",
+        "Customized to your skin, hair, and concerns, never one-size-fits-all.",
     },
     {
       icon: ShieldCheck,
@@ -46,7 +46,7 @@ function UspSection() {
 
   return (
     <section className="w-full bg-surface relative">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 pb-[100px] md:pb-[130px] lg:pb-[200px]">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6  py-[100px] md:py-[130px] lg:py-[200px]">
         <div className="flex flex-col items-center text-center gap-4 mb-16 sm:mb-20">
           <h2 className="text-[38px] sm:text-[46px] md:text-[52px] font-primary text-primary-dark leading-none">
             Why Choose Skinique

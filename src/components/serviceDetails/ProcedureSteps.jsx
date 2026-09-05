@@ -37,9 +37,6 @@ export default function ProcedureSteps({
                   <h3 className="text-[20px] sm:text-[22px] font-primary text-primary-dark leading-tight">
                     {step.title}
                   </h3>
-                  <p className="text-[13px] sm:text-[14px] leading-[1.7] text-text-soft font-secondary">
-                    {step.description}
-                  </p>
                 </div>
               </li>
             ))}

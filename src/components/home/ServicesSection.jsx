@@ -3,24 +3,27 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import skinImg from "../../assets/services/skin.png";
+import hairImg from "../../assets/services/hair.png";
+import laserImg from "../../assets/services/laser.png";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const services = [
   {
-    img: "/skin.png",
+    img: skinImg,
     title: "Skin",
     desc: "Advanced skincare treatments tailored to restore radiance and improve your skin's health.",
     slug: "skin",
   },
   {
-    img: "/hair.png",
+    img: hairImg,
     title: "Hair",
     desc: "Comprehensive hair restoration and care solutions for every hair type and concern.",
     slug: "hair",
   },
   {
-    img: "/laser.png",
+    img: laserImg,
     title: "Laser",
     desc: "Precision laser therapies for hair removal, skin rejuvenation, and targeted treatment.",
     slug: "laser",

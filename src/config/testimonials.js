@@ -2,6 +2,17 @@
 //
 // Real Google review data for Skinique - Dr. Kajal Komalan
 // (Maps cid: 17611080526173218198). Update this file when new reviews come in.
+// Avatar images are downloaded from Google and stored locally as webp in
+// ../assets/testimonials/ (see that folder to swap/update a photo).
+
+import drShriyaVermaAvatar from "../assets/testimonials/dr-shriya-verma.webp";
+import nivyaJomichanAvatar from "../assets/testimonials/nivya-jomichan.webp";
+import mahimaGandhiAvatar from "../assets/testimonials/mahima-gandhi.webp";
+import sreethiPillaiAvatar from "../assets/testimonials/sreethi-pillai.webp";
+import niharikaJainAvatar from "../assets/testimonials/niharika-jain.webp";
+import binuJoyAvatar from "../assets/testimonials/binu-joy.webp";
+import saiquaTaghazzulAvatar from "../assets/testimonials/saiqua-taghazzul.webp";
+import shreedharDhuleAvatar from "../assets/testimonials/shreedhar-dhule.webp";
 
 export const GOOGLE_RATING = {
   rating: 5.0,
@@ -11,7 +22,7 @@ export const GOOGLE_RATING = {
 export const TESTIMONIALS = [
   {
     name: "Dr Shriya Verma",
-    avatar: "https://lh3.googleusercontent.com/a/ACg8ocJV8jAZUte4w_xIz0Y1TE3zEAaq2u3QnI4N3AopScOcfBwAYg=s96-c-rp-mo-ba12-br100",
+    avatar: drShriyaVermaAvatar,
     rating: 5,
     concern: "Consultation",
     quote:
@@ -19,7 +30,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Nivya Jomichan",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjXlTGRXN_VA8STF7inIAUkCMmHWFnI6uE_coHpahlemHSFy7E0s=s96-c-rp-mo-br100",
+    avatar: nivyaJomichanAvatar,
     rating: 5,
     concern: "HydraFacial",
     quote:
@@ -27,7 +38,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "mahima gandhi",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjVhTd50oCMlMDUZkv0UiGH-hIgFYV2ZRJLN5LIHGrgf4wQ0aBF2=s96-c-rp-mo-ba12-br100",
+    avatar: mahimaGandhiAvatar,
     rating: 5,
     concern: "HydraFacial",
     quote:
@@ -35,7 +46,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Sreethi Pillai",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjWDmToCzzNCs3qNOkjdLZ5-iQvtwdxo-1SioV8eWJ98z_pMM8_Y=s96-c-rp-mo-br100",
+    avatar: sreethiPillaiAvatar,
     rating: 5,
     concern: "Skin Care",
     quote:
@@ -43,7 +54,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Niharika Jain",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjWFU_SKrxF1OVifAN6C5PfuBjwq5PuSfsifeXDbvrDP-fG_ZJiP=s96-c-rp-mo-br100",
+    avatar: niharikaJainAvatar,
     rating: 5,
     concern: "HydraFacial",
     quote:
@@ -51,7 +62,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Binu Joy",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUqnc5GveVGX5_IXkF4o7Fs23lISxueInDzQZ_fsVNJtGjM2VTV8A=s96-c-rp-mo-ba12-br100",
+    avatar: binuJoyAvatar,
     rating: 5,
     concern: "Carbon Laser Facial",
     quote:
@@ -59,7 +70,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Saiqua Taghazzul",
-    avatar: "https://lh3.googleusercontent.com/a/ACg8ocJ-4OCyj55REaKAOzEDM2ezg4xLl5OZEpaRut_PpCNPxfsUTg=s96-c-rp-mo-br100",
+    avatar: saiquaTaghazzulAvatar,
     rating: 5,
     concern: "Consultation",
     quote:
@@ -67,7 +78,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Shreedhar Dhule",
-    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjXsSUFCd10s0ROcdBjrDNDwTXKoJ_B48cjmL3TXWCrvoXrpLb4=s96-c-rp-mo-br100",
+    avatar: shreedharDhuleAvatar,
     rating: 5,
     concern: "Hair Regrowth",
     quote:

@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import { SERVICES } from "../../config/services";
 import CircularChip from "../CircularChip";
-import bannerImg from "../../assets/hero/banner.webp";
+import bannerImg from "../../assets/clinic/IMG_0153.webp";
 import decorLeft from "../../assets/hero/decor-left.svg";
 import decorRight from "../../assets/hero/decor-right.svg";
 import exploreIcon from "../../assets/hero/explore-icon.svg";
 
-const heroChips = SERVICES.flatMap((cat) =>
-  cat.services.slice(0, 4).map((service) => ({
+const heroChips = Object.entries(SERVICES).flatMap(([category, services]) =>
+  services.slice(0, 4).map((service) => ({
     id: service.slug,
     label: service.title,
     image: service.img,
-    to: `/services/${cat.category}/${service.slug}`,
+    to: `/services/${category}/${service.slug}`,
   }))
 );
 

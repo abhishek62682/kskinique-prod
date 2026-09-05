@@ -6,7 +6,7 @@ import seamless2Img from "../../assets/home/why-us-seamless-2.webp";
 import avatar1Img from "../../assets/home/why-us-avatar-1.webp";
 import avatar2Img from "../../assets/home/why-us-avatar-2.webp";
 import avatar3Img from "../../assets/home/why-us-avatar-3.webp";
-import photoImg from "../../assets/home/why-us-photo.webp";
+import carbonVideo from "../../assets/treatment/carbon.mp4";
 import freeBadgeIcon from "../../assets/icons/free-badge.svg";
 import whyUsVideo from "../../assets/home/why-us-video.mp4";
 
@@ -87,13 +87,13 @@ export default function WhyUsSection() {
           {/* Card C: Stats */}
           <div className="rounded-[24px] min-h-62.5 bg-primary-05">
             <div className="p-7 pb-10 flex flex-col h-full">
-              <h4 className="font-primary text-[42px] sm:text-[46px] leading-[55px] text-primary-dark font-normal">10+</h4>
+              <h4 className="font-primary text-[42px] sm:text-[46px] leading-[55px] text-primary-dark font-normal">3+</h4>
               <p className="text-[15px] leading-[21px] text-text-soft font-secondary my-4">Years of medical excellence</p>
               <div className="flex flex-col items-start gap-2.5">
-                <span className="text-[13px] font-secondary leading-[18px] text-text-soft bg-white w-fit px-2.5 py-1 rounded-[20px]">2,000+ Procedures</span>
-                <span className="text-[13px] font-secondary leading-[18px] text-text-soft bg-white w-fit px-2.5 py-1 rounded-[20px]">50+ Treatments</span>
+                <span className="text-[13px] font-secondary leading-[18px] text-text-soft bg-white w-fit px-2.5 py-1 rounded-[20px]">2K+ Patients Treated</span>
+                <span className="text-[13px] font-secondary leading-[18px] text-text-soft bg-white w-fit px-2.5 py-1 rounded-[20px]">18 Treatments</span>
               </div>
-              <p className="font-primary text-[48px] sm:text-[52px] text-primary-10 leading-none mt-auto pt-4">Since 2016</p>
+              <p className="font-primary text-[48px] sm:text-[52px] text-primary-10 leading-none mt-auto pt-4">Since 2025</p>
             </div>
           </div>
 
@@ -108,18 +108,21 @@ export default function WhyUsSection() {
               <div className="flex flex-col gap-2">
                 <h4 className="font-primary text-[28px] sm:text-[30px] leading-[36px] text-primary-dark font-normal">Tailored to your vision</h4>
                 <p className="text-[14px] sm:text-[15px] leading-[21px] text-text-soft font-secondary">
-                  Customized treatment plans <br /> for every skin type and concern
+                  Customized treatment plans <br /> for every skin, hair, and scalp concern
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Card E: Photo, spans 2 rows on lg */}
-          <div className="rounded-[24px] overflow-hidden min-h-62.5 sm:row-span-2">
-            <img
-              src={photoImg}
-              alt=""
-              className="w-full h-full object-cover"
+          {/* Card E: Video, spans 2 rows on lg */}
+          <div className="relative rounded-[24px] overflow-hidden min-h-62.5 sm:row-span-2">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+              src={carbonVideo}
             />
           </div>
 

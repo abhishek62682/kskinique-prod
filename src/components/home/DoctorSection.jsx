@@ -13,11 +13,11 @@ export default function DoctorSection() {
       icon: credentialIcon1,
     },
     {
-      label: "Personalized treatment plans",
+      label: "3 Yrs Dermatology & Aesthetic Medicine",
       icon: credentialIcon2,
     },
     {
-      label: "Natural, long-lasting results",
+      label: "Personalized Treatment Plans",
       icon: credentialIcon3,
     },
   ];
@@ -81,10 +81,10 @@ export default function DoctorSection() {
 
               <div className="flex flex-col gap-3">
                 <p className="text-[14px] sm:text-[15px] leading-[1.75] text-text-soft font-secondary">
-                  Dr. Kajal Komalan (MBBS, DDV) believes in combining scientific dermatology with aesthetic artistry to create natural, long-lasting results.
+                  Dr. Kajal Komalan founded Skinique on a simple belief: real care starts with really listening. She takes the time to understand each patient's concerns before building their treatment plan, not the other way around.
                 </p>
                 <p className="text-[14px] sm:text-[15px] leading-[1.75] text-text-soft font-secondary">
-                  Every consultation focuses on understanding the patient's concerns and designing a personalized treatment plan, because beautiful skin starts with healthy skin, and healthy skin starts with a confident you.
+                  Alongside in-clinic procedures, patients receive dietary recommendations and daily skin and hair care routines tailored to their needs, because beautiful skin starts with healthy skin, and healthy skin starts with a confident you.
                 </p>
               </div>
 

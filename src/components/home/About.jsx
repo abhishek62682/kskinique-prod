@@ -44,7 +44,7 @@ const About = () => {
 
   // the paragraph text, broken into words for the fill effect
   const paragraph =
-    "Great skin shouldn't mean endless appointments and one-size-fits-all treatments. So we brought expert dermatology and aesthetic medicine together under one roof, so you get the personalised care your skin truly deserves.";
+    "Great skin and hair shouldn't mean endless appointments and one-size-fits-all treatments. So we brought expert dermatology and aesthetic medicine together under one roof, so you get the personalised care you truly deserve.";
   const words = paragraph.split(" ");
 
   // orbit + image rotation, only set up once the orbit elements actually exist (radius > 0)
@@ -138,7 +138,7 @@ const About = () => {
               <h2 className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[42px]
                leading-[1.3] text-primary-dark">
                Meet Skinique.<br />
-               Where skin comes first.
+               Where you come first.
               </h2>
             </div>
 
@@ -162,6 +162,7 @@ const About = () => {
                       <div ref={(el) => (imgRefs.current[i] = el)}>
                         <img
                           src={src}
+                          alt=""
                           className="w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40
                                      rounded-2xl object-cover shadow-2xl border border-border"
                         />
