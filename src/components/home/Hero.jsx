@@ -6,10 +6,25 @@ import decorLeft from "../../assets/hero/decor-left.svg";
 import decorRight from "../../assets/hero/decor-right.svg";
 import exploreIcon from "../../assets/hero/explore-icon.svg";
 
+const SHORT_LABELS = {
+  "acne-acne-scars": "Acne",
+  "hyper-pigmentation": "Pigmentation",
+  "insta-glow-brightness": "Insta Glow",
+  "open-pores-textured-skin": "Open Pores",
+  "prp-hair-therapy": "PRP Therapy",
+  "gfc-hair-therapy": "GFC Therapy",
+  "microneedling-for-hair": "Microneedling",
+  "exosome-hair-therapy": "Exosome Therapy",
+  "under-eye-lip-pigmentation": "Under-Eye & Lip",
+  "laser-for-body-pigmentation": "Body Pigmentation",
+  "laser-toning": "Laser Toning",
+  "carbon-toning": "Carbon Toning",
+};
+
 const heroChips = Object.entries(SERVICES).flatMap(([category, services]) =>
   services.slice(0, 4).map((service) => ({
     id: service.slug,
-    label: service.title,
+    label: SHORT_LABELS[service.slug] ?? service.title,
     image: service.img,
     to: `/services/${category}/${service.slug}`,
   }))
