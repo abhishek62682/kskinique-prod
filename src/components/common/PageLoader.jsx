@@ -37,7 +37,7 @@ export default function PageLoader() {
       <img
         src="/logo.png"
         alt="Skinique"
-        className="w-40 sm:w-52 animate-pulse"
+        className="w-32 sm:w-44 animate-pulse"
       />
     </div>
   );
